@@ -1,1219 +1,1364 @@
 const questionsData = [
-    // ================= FÁCIL (25 PREGUNTAS) =================
+    // ================= FÁCIL (1-25): CONCEPTOS BÁSICOS DE SPICE Y NTC 5420-3 =================
     {
         id: 1,
         diff: "Fácil",
-        cat: "HTML",
-        q: "¿Cuál es la etiqueta HTML5 correcta para definir la cabecera principal de un sitio web o sección?",
-        opts: ["header", "head", "top", "navbar"],
-        ans: 0,
-        exp: "La etiqueta <header> en HTML5 representa un grupo de soporte introductorio o de navegación."
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuál es el centro de atención principal del enfoque SPICE (ISO/IEC 15504)?",
+        opts: [
+            "Medir únicamente la velocidad del código",
+            "Evaluar y mejorar la capacidad de los procesos de software",
+            "Garantizar que no existan errores en el producto final",
+            "Instalar un software automático en la computadora"
+        ],
+        ans: 1,
+        exp: "El centro de atención de SPICE es el proceso: las actividades, responsabilidades, controles y resultados mediante los cuales se desarrolla o mantiene el software."
     },
     {
         id: 2,
         diff: "Fácil",
-        cat: "HTML",
-        q: "¿Qué atributo se utiliza en HTML para dar una descripción alternativa a una imagen por accesibilidad?",
-        opts: ["title", "src", "alt", "description"],
-        ans: 2,
-        exp: "El atributo 'alt' (texto alternativo) especifica un texto para ser mostrado cuando la imagen no carga o para lectores de pantalla."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué significan las siglas de la iniciativa SPICE?",
+        opts: [
+            "Software Process Improvement and Capability Determination",
+            "Software Performance Inspection and Code Evaluation",
+            "System Programming Integration and Cyber Enterprise",
+            "Standard Process Implementation and Quality Control"
+        ],
+        ans: 0,
+        exp: "SPICE corresponde a Software Process Improvement and Capability Determination (Mejora de procesos de software y determinación de la capacidad)."
     },
     {
         id: 3,
         diff: "Fácil",
-        cat: "CSS",
-        q: "¿Qué propiedad de CSS se utiliza para cambiar el color del texto de un elemento?",
-        opts: ["text-color", "color", "font-color", "background-color"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué objeto examina la norma colombiana NTC 5420-3:2008 a diferencia de SPICE?",
+        opts: [
+            "Evalúa la puntualidad del personal",
+            "Mide propiedades internas del producto de software (diseño, estructura, código)",
+            "Audita los costos financieros de la empresa",
+            "Define la velocidad de la red de internet"
+        ],
         ans: 1,
-        exp: "La propiedad 'color' define el color del texto en CSS."
+        exp: "La NTC 5420-3 se enfoca en métricas internas para analizar propiedades de artefactos del producto, mientras SPICE evalúa la capacidad de los procesos."
     },
     {
         id: 4,
         diff: "Fácil",
-        cat: "CSS",
-        q: "En el modelo de caja de CSS (Box Model), ¿cuál es el espacio interno entre el contenido y el borde?",
-        opts: ["margin", "padding", "border", "outline"],
+        cat: "Arquitectura & SPICE",
+        q: "Utilizando la analogía de la construcción de una casa presente en el guión, ¿qué representa SPICE?",
+        opts: [
+            "Medir la resistencia de los ladrillos colocados",
+            "Evaluar cómo trabaja el equipo de construcción (si sigue planos, coordina y revisa)",
+            "Pintar las paredes del edificio",
+            "Comprar las herramientas de trabajo"
+        ],
         ans: 1,
-        exp: "Padding es el espacio de relleno entre el contenido del elemento y su borde."
+        exp: "Una cosa es evaluar cómo trabaja el equipo (SPICE/Proceso) y otra medir las características de la casa construida (NTC 5420-3/Producto)."
     },
     {
         id: 5,
         diff: "Fácil",
-        cat: "JavaScript",
-        q: "¿Cuál de las siguientes formas es la adecuada en ES6+ para declarar una variable que no se puede reasignar?",
-        opts: ["var", "let", "const", "static"],
-        ans: 2,
-        exp: "'const' crea una referencia de solo lectura a un valor en un alcance (scope) de bloque."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué significan las siglas SPI en el contexto de desarrollo de software?",
+        opts: [
+            "Software Process Improvement (Mejora de Procesos de Software)",
+            "System Performance Integration",
+            "Standard Product Inspection",
+            "Software Programming Interface"
+        ],
+        ans: 0,
+        exp: "SPI significa Software Process Improvement: trabajar de forma sistemática para comprender, diagnosticar y mejorar las prácticas de desarrollo."
     },
     {
         id: 6,
         diff: "Fácil",
-        cat: "JavaScript",
-        q: "¿Qué operador devuelve la igualdad estricta evaluando tanto el valor como el tipo de dato en JavaScript?",
-        opts: ["==", "=", "===", "=="],
-        ans: 2,
-        exp: "El operador === (igualdad estricta) no realiza conversión de tipo al comparar."
+        cat: "Arquitectura & SPICE",
+        q: "¿Con qué actividad debe comenzar un programa serio de mejora de procesos (SPI)?",
+        opts: [
+            "Comprando la herramienta más moderna",
+            "Con un diagnóstico de la forma actual de trabajar para establecer una línea base",
+            "Trabajando el doble de horas",
+            "Reemplazando a todo el equipo de desarrollo"
+        ],
+        ans: 1,
+        exp: "Una mejora seria no comienza comprando herramientas; primero requiere un diagnóstico para establecer una línea base con datos comparables."
     },
     {
         id: 7,
         diff: "Fácil",
-        cat: "JavaScript",
-        q: "¿Cómo se imprime un mensaje informativo en la consola del navegador usando JS?",
-        opts: ["console.print()", "console.log()", "print.log()", "document.write()"],
-        ans: 1,
-        exp: "console.log() es el método estándar para emitir mensajes a la consola web."
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuál fue uno de los antecedentes normativos de madurez organizacional previo al desarrollo de SPICE?",
+        opts: ["CMM (Capability Maturity Model)", "HTML5", "GitFlow", "IEEE 802.11"],
+        ans: 0,
+        exp: "Durante las décadas de 1980 y 1990, CMM (Capability Maturity Model) fue uno de los antecedentes clave en la evaluación de procesos."
     },
     {
         id: 8,
         diff: "Fácil",
-        cat: "Python",
-        q: "¿Qué función nativa de Python se usa para obtener la longitud de una lista o cadena?",
-        opts: ["length()", "size()", "count()", "len()"],
-        ans: 3,
-        exp: "len() devuelve el número de elementos de un objeto iterable en Python."
+        cat: "Arquitectura & SPICE",
+        q: "¿Por qué la calidad de un software no depende únicamente del talento individual del equipo?",
+        opts: [
+            "Porque el talento no sirve en programación",
+            "Porque sin procesos organizados y controlados se generan imprecisiones, retrasos y sobrecostos",
+            "Porque la calidad depende solo de las computadoras usadas",
+            "Porque las normas prohíben el trabajo individual"
+        ],
+        ans: 1,
+        exp: "Sin procesos organizados, la falta de claridad en requisitos o revisiones genera defectos y reprocesos independientemente de la habilidad técnica."
     },
     {
         id: 9,
         diff: "Fácil",
-        cat: "Python",
-        q: "¿Cómo se definen los bloques de código y control de flujo en Python?",
-        opts: ["Con llaves {}", "Con indentación (sangría)", "Con palabras clave end", "Con corchetes []"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Garantiza SPICE que el producto final esté 100% libre de errores?",
+        opts: [
+            "Sí, asegura perfección absoluta",
+            "No, SPICE evalúa la capacidad del proceso, reduciendo la improvisación pero no elimina cualquier imprevisto",
+            "Sí, si se alcanza el Nivel 1",
+            "Solo si se combina con un antivirus"
+        ],
         ans: 1,
-        exp: "Python utiliza la indentación (espacios en blanco) para definir la estructura y bloques de código."
+        exp: "SPICE no es una garantía de producto perfecto ni un programa instalable; ayuda a reducir la improvisación y controlar los procesos."
     },
     {
         id: 10,
         diff: "Fácil",
-        cat: "Git & GitHub",
-        q: "¿Qué comando de Git inicializa un nuevo repositorio local en el directorio actual?",
-        opts: ["git create", "git new", "git init", "git start"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuántos niveles de capacidad define el modelo SPICE ISO/IEC 15504?",
+        opts: ["3 niveles (1 al 3)", "5 niveles (1 al 5)", "6 niveles (Nivel 0 al Nivel 5)", "10 niveles"],
         ans: 2,
-        exp: "git init crea un repositorio Git nuevo y vacío o reinicializa uno existente."
+        exp: "SPICE define 6 niveles de capacidad numerados del 0 al 5 (Incompleto, Realizado, Gestionado, Establecido, Predecible y En Optimización)."
     },
     {
         id: 11,
         diff: "Fácil",
-        cat: "Git & GitHub",
-        q: "¿Cuál es el comando para preparar (stage) todos los archivos modificados antes de hacer un commit?",
-        opts: ["git push .", "git save .", "git add .", "git commit -a"],
-        ans: 2,
-        exp: "'git add .' agrega todos los cambios del directorio actual al área de preparación (Staging Area)."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué representa el Nivel 0 de capacidad en SPICE?",
+        opts: [
+            "Proceso Optimizado",
+            "Proceso Incompleto (el proceso no se implementa o no alcanza su propósito)",
+            "Proceso Gestionado",
+            "Proceso Automatizado"
+        ],
+        ans: 1,
+        exp: "El Nivel 0 indica que el proceso no está implementado adecuadamente o no logra producir sus resultados esperados."
     },
     {
         id: 12,
         diff: "Fácil",
-        cat: "POO",
-        q: "En Programación Orientada a Objetos, ¿qué representa la 'plantilla' o molde a partir de la cual se crean objetos?",
-        opts: ["Método", "Instancia", "Clase", "Atributo"],
-        ans: 2,
-        exp: "Una Clase es una plantilla o modelo abstracto a partir del cual se instancian los objetos."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué caracteriza al Nivel 1 (Proceso Realizado)?",
+        opts: [
+            "Utiliza métricas estadísticas complejas",
+            "El proceso alcanza su propósito y produce resultados, aunque dependa de la habilidad individual",
+            "Está totalmente automatizado",
+            "Posee una definición estándar en toda la empresa"
+        ],
+        ans: 1,
+        exp: "El Nivel 1 logra el propósito del proceso, pero sin asegurar aún planificación o controles formales de gestión."
     },
     {
         id: 13,
         diff: "Fácil",
-        cat: "POO",
-        q: "¿Cuáles son los 4 pilares fundamentales de la Programación Orientada a Objetos?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuál es una evidencia válida utilizada por un evaluador en SPICE?",
         opts: [
-            "Variables, Bucles, Funciones y Arreglos",
-            "Abstracción, Encapsulamiento, Herencia y Polimorfismo",
-            "HTML, CSS, JS y Python",
-            "Clases, Métodos, Instancias y Repositorios"
+            "Opiniones y rumores sin verificar",
+            "Planes, registros de ejecución, matrices de trazabilidad y entrevistas contrastadas",
+            "El logo de la empresa",
+            "La cantidad de computadores comprados"
         ],
         ans: 1,
-        exp: "Los 4 pilares centrales de la POO son Abstracción, Encapsulamiento, Herencia y Polimorfismo."
+        exp: "Las evaluaciones SPICE se sustentan en evidencias objetivas como registros, artefactos, observaciones y entrevistas cruzadas."
     },
     {
         id: 14,
         diff: "Fácil",
         cat: "Arquitectura & SPICE",
-        q: "En el estándar SPICE (ISO/IEC 15504), ¿cuántos niveles de capacidad de proceso se definen (del Nivel 0 al 5)?",
-        opts: ["4 niveles", "5 niveles", "6 niveles", "10 niveles"],
-        ans: 2,
-        exp: "SPICE define 6 niveles de capacidad: Nivel 0 (Incompleto), 1 (Realizado), 2 (Gestionado), 3 (Establecido), 4 (Predecible) y 5 (En optimización)."
+        q: "¿Hacia qué familia de normas evolucionó posteriormente la serie ISO/IEC 15504?",
+        opts: ["Familia ISO/IEC 33000", "Familia IEEE 802", "ISO 9000 v1", "NTC 1000"],
+        ans: 0,
+        exp: "La serie ISO/IEC 15504 fue reemplazada y evolucionó progresivamente hacia la familia de normas ISO/IEC 33000."
     },
     {
         id: 15,
         diff: "Fácil",
-        cat: "HTML",
-        q: "¿Qué etiqueta de HTML5 se utiliza para incluir un código de JavaScript externo o embebido?",
-        opts: ["javascript>", "script", "js", "code.js"],
-        ans: 1,
-        exp: "La etiqueta <script> se utiliza para insertar o hacer referencia a scripts ejecutables."
+        cat: "Arquitectura & SPICE",
+        q: "¿Con qué norma internacional se relaciona directamente la NTC 5420-3:2008?",
+        opts: ["ISO/IEC 9126-3:2003", "ISO 27001", "CMMI Level 5", "IEEE 1012"],
+        ans: 0,
+        exp: "La NTC 5420-3:2008 es la adopción colombiana equivalente a la norma internacional ISO/IEC 9126-3:2003 sobre métricas internas."
     },
     {
         id: 16,
         diff: "Fácil",
-        cat: "CSS",
-        q: "¿Qué unidad de medida en CSS es relativa al tamaño de fuente del elemento raíz (<html>)?",
-        opts: ["px", "em", "rem", "vh"],
-        ans: 2,
-        exp: "rem significa 'root em' y su tamaño es proporcional al font-size del elemento raíz <html>."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué es un 'Atributo de Proceso' en la evaluación SPICE?",
+        opts: [
+            "El sueldo del desarrollador",
+            "Una característica específica que se analiza para determinar la capacidad de un proceso",
+            "El lenguaje de programación utilizado",
+            "El nombre del cliente del proyecto"
+        ],
+        ans: 1,
+        exp: "Los atributos son características observables analizadas mediante evidencias para valorar el nivel de capacidad."
     },
     {
         id: 17,
         diff: "Fácil",
-        cat: "JavaScript",
-        q: "¿Cuál es el tipo de dato devuelto por la expresión `typeof NaN` en JavaScript?",
-        opts: ["'number'", "'undefined'", "'NaN'", "'object'"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué se requiere además de una entrevista para validar un proceso según el guión?",
+        opts: [
+            "Comprobar con evidencias si la explicación coincide con lo que realmente ocurre",
+            "Aceptar la palabra del entrevistado sin revisar nada",
+            "Grabar un video publicitario",
+            "Firmar un contrato bancario"
+        ],
         ans: 0,
-        exp: "En JavaScript, NaN (Not a Number) es técnicamente un tipo de dato numérico según la especificación IEEE 754."
+        exp: "El guión destaca que una entrevista debe ser contrastada con registros, artefactos y observaciones reales."
     },
     {
         id: 18,
         diff: "Fácil",
-        cat: "Python",
-        q: "¿Qué palabra clave se usa para definir una función en Python?",
-        opts: ["function", "func", "def", "lambda"],
-        ans: 2,
-        exp: "La palabra reservada 'def' inicia la declaración de una función en Python."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué demuestra la existencia de un documento formal de procedimiento por sí solo?",
+        opts: [
+            "Demuestra que el proceso está en Nivel 5",
+            "No demuestra automáticamente que el proceso se aplique en el trabajo real si el equipo lo ignora",
+            "Garantiza que el software no tendrá errores",
+            "Demuestra que la empresa está certificada"
+        ],
+        ans: 1,
+        exp: "Tener un procedimiento escrito no basta; debe existir evidencia de que el equipo lo conoce y lo utiliza realmente."
     },
     {
         id: 19,
         diff: "Fácil",
-        cat: "Git & GitHub",
-        q: "¿Qué comando de Git envía los commits de tu repositorio local al repositorio remoto en GitHub?",
-        opts: ["git pull", "git fetch", "git push", "git upload"],
-        ans: 2,
-        exp: "'git push' actualiza las referencias remotas junto con los objetos asociados."
+        cat: "Arquitectura & SPICE",
+        q: "En el ciclo SPI, ¿por qué es fundamental comparar resultados con la línea base?",
+        opts: [
+            "Para determinar con datos comparables si la acción de mejora redujo problemas",
+            "Para castigar a los programadores",
+            "Para borrar los archivos viejos",
+            "Para cambiar de lenguaje de programación"
+        ],
+        ans: 0,
+        exp: "La comparación contra la línea base permite comprobar con datos si las acciones implementadas aportaron mejoras reales."
     },
     {
         id: 20,
         diff: "Fácil",
-        cat: "POO",
-        q: "¿Qué método especial se ejecuta automáticamente al instanciar una nueva clase en Python?",
-        opts: ["__start__()", "__init__()", "__new__()", "constructor()"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué evalúan las métricas internas de la NTC 5420-3?",
+        opts: [
+            "La opinión de los clientes en redes sociales",
+            "Propiedades de los artefactos (especificaciones, diseño, código) sin requerir ejecución en un entorno real",
+            "Las ventas anuales de la empresa",
+            "El desempeño del servidor en la nube"
+        ],
         ans: 1,
-        exp: "El método __init__() actúa como el constructor inicializador de instancias en Python."
+        exp: "Las métricas internas evalúan características estáticas de los artefactos antes o durante el desarrollo."
     },
     {
         id: 21,
         diff: "Fácil",
         cat: "Arquitectura & SPICE",
-        q: "¿Qué evalúa principalmente la norma ISO/IEC 15504 (SPICE)?",
-        opts: ["La velocidad de procesadores", "La capacidad y madurez de los procesos de software", "El costo del hardware", "La interfaz visual de una app"],
+        q: "¿A qué se parece el ciclo continuo de SPI según la analogía deportiva del guión?",
+        opts: [
+            "A comprar tenis costosos",
+            "A observar el desempeño, detectar fallas, aplicar un cambio técnico y medir si mejora el resultado",
+            "A jugar sin reglas de juego",
+            "A cambiar de deporte cada semana"
+        ],
         ans: 1,
-        exp: "SPICE evalúa y mejora la capacidad de los procesos del ciclo de vida del software."
+        exp: "Mejorar procesos se parece a ajustar la técnica deportiva: diagnosticar, cambiar la práctica y medir el efecto."
     },
     {
         id: 22,
         diff: "Fácil",
-        cat: "HTML",
-        q: "¿Qué etiqueta se debe usar para crear una lista ordenada numéricamente?",
-        opts: ["ul", "ol", "li", "dl"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Se puede asignar una nota de capacidad a toda una empresa evaluando un solo proyecto pequeño?",
+        opts: [
+            "Sí, aplica para toda la empresa automáticamente",
+            "No, la evaluación se limita estrictamente al alcance evaluado (procesos, equipos o unidades concretas)",
+            "Sí, si la empresa paga la tarifa completa",
+            "Solo si el proyecto usó Python"
+        ],
         ans: 1,
-        exp: "ol crea una lista ordenada (Ordered List)."
+        exp: "El alcance define lo evaluado; no es correcto asumir que toda una organización posee la misma capacidad de un equipo particular."
     },
     {
         id: 23,
         diff: "Fácil",
-        cat: "CSS",
-        q: "¿Qué propiedad en CSS Flexbox define el eje principal de distribución de los elementos (filas o columnas)?",
-        opts: ["flex-wrap", "flex-direction", "justify-content", "align-items"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué sucede cuando un proceso de software depende de una sola persona experta?",
+        opts: [
+            "Es Nivel 5 de capacidad",
+            "Puede lograr resultados (Nivel 1), pero es difícil de repetir si la persona falta al no estar gestionado o estandarizado",
+            "Es un proceso totalmente predecible",
+            "Se garantiza la máxima calidad del producto"
+        ],
         ans: 1,
-        exp: "flex-direction establece cómo se colocan los elementos flexibles en el contenedor (row, column, etc.)."
+        exp: "En Nivel 1 el éxito suele depender del talento individual, creando vulnerabilidades si esa persona se ausenta."
     },
     {
         id: 24,
         diff: "Fácil",
-        cat: "JavaScript",
-        q: "¿Qué método de array en JavaScript añade uno o más elementos al final de un arreglo?",
-        opts: ["pop()", "shift()", "push()", "unshift()"],
-        ans: 2,
-        exp: "push() añade elementos al final del array y retorna la nueva longitud."
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuál es el propósito del proceso de pruebas de software según el guión?",
+        opts: [
+            "Escribir más líneas de código que el desarrollador",
+            "Verificar que el producto satisface los requisitos especificados y ayudar a descubrir defectos",
+            "Retrasar las entregas del proyecto",
+            "Reemplazar las reuniones de diseño"
+        ],
+        ans: 1,
+        exp: "El propósito de las pruebas es verificar el cumplimiento de requisitos especificados y detectar fallas tempranamente."
     },
     {
         id: 25,
         diff: "Fácil",
-        cat: "Python",
-        q: "¿Qué tipo de estructura de datos en Python es inmutable y se define entre paréntesis ()?",
-        opts: ["Lista", "Diccionario", "Tupla", "Conjunto (Set)"],
-        ans: 2,
-        exp: "Las Tuplas son colecciones ordenadas e inmutables en Python."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué se logra al revisar requisitos desde etapas tempranas?",
+        opts: [
+            "Detectar y corregir fallas cuando son menos costosas de resolver",
+            "Aumentar el costo total del proyecto",
+            "Evitar hacer pruebas unitarias",
+            "Eliminar la necesidad de documentación"
+        ],
+        ans: 0,
+        exp: "Detectar imprecisiones o errores en requisitos al inicio reduce los costosos reprocesos de fases finales."
     },
 
-    // ================= INTERMEDIO (25 PREGUNTAS) =================
+    // ================= INTERMEDIO (26-50): ARQUITECTURA BIDIMENSIONAL Y ATRIBUTOS =================
     {
         id: 26,
         diff: "Intermedio",
-        cat: "JavaScript",
-        q: "¿Cuál es el resultado de ejecutar `console.log(1 + '2' - 1)` en JavaScript?",
-        opts: ["11", "12", "11", "NaN"],
-        ans: 0,
-        exp: "1 + '2' realiza una concatenación dando la cadena '12'. Luego '12' - 1 convierte la cadena a número restando 1, dando como resultado 11."
+        cat: "Arquitectura & SPICE",
+        q: "¿En qué consiste la Arquitectura Bidimensional de SPICE?",
+        opts: [
+            "Diseñar la pantalla en 2D y 3D",
+            "Una dimensión de Proceso ('Qué se evalúa') y una dimensión de Capacidad ('Qué tan bien se realiza')",
+            "Frontend y Backend",
+            "Métricas de hardware y software"
+        ],
+        ans: 1,
+        exp: "SPICE separa la Dimensión de Proceso (propósito y resultados del proceso) de la Dimensión de Capacidad (niveles y atributos)."
     },
     {
         id: 27,
         diff: "Intermedio",
-        cat: "JavaScript",
-        q: "¿Qué método de iteración de arrays crea un nuevo arreglo con los elementos que cumplen una condición lógica?",
-        opts: ["map()", "forEach()", "filter()", "reduce()"],
-        ans: 2,
-        exp: "filter() crea un nuevo array con todos los elementos que pasan la prueba implementada por la función provista."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué caracteriza al Nivel 2 (Proceso Gestionado) de SPICE?",
+        opts: [
+            "El proceso se planifica, supervisa y los productos de trabajo se controlan",
+            "El proceso innova mediante Inteligencia Artificial",
+            "No se realiza ninguna planificación",
+            "Se aplican únicamente métricas cuantitativas avanzadas"
+        ],
+        ans: 0,
+        exp: "En el Nivel 2 la ejecución se gestiona (se planifica y supervisa) y los productos de trabajo se identifican y controlan."
     },
     {
         id: 28,
         diff: "Intermedio",
-        cat: "CSS",
-        q: "En CSS Grid Layout, ¿cuál es la función de `grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))`?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuáles son los dos atributos de proceso pertenecientes al Nivel 2?",
         opts: [
-            "Crear exactamente 2 columnas fijas de 200px",
-            "Generar un diseño responsive automático ajustando columnas según el espacio disponible",
-            "Establecer filas adaptativas de 1fr",
-            "Establecer la altura del contenedor grid"
+            "PA 2.1 (Gestión del desempeño) y PA 2.2 (Gestión de productos de trabajo)",
+            "PA 1.1 y PA 3.1",
+            "PA 4.1 y PA 5.1",
+            "PA 2.1 y PA 5.2"
         ],
-        ans: 1,
-        exp: "repeat con auto-fit y minmax crea cuadrículas fluidas y responsive sin necesidad de media queries manuales."
+        ans: 0,
+        exp: "El Nivel 2 comprende PA 2.1 (Performance Management) y PA 2.2 (Work Product Management)."
     },
     {
         id: 29,
         diff: "Intermedio",
-        cat: "Python",
-        q: "¿Qué hace una 'comprensión de listas' (List Comprehension) como `[x**2 for x in range(5) if x % 2 == 0]`?",
-        opts: ["Genera la lista [0, 4, 16]", "Genera la lista [0, 1, 4, 9, 16]", "Produce un error de sintaxis", "Genera una lista de booleanos"],
-        ans: 0,
-        exp: "Para los números pares entre 0 y 4 (que son 0, 2, 4), eleva al cuadrado produciendo [0, 4, 16]."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué diferencia al Nivel 3 (Proceso Establecido) del Nivel 2?",
+        opts: [
+            "El Nivel 2 es caótico",
+            "En el Nivel 3 la organización cuenta con un proceso definido estándar que se puede adaptar bajo reglas comunes a varios proyectos",
+            "En el Nivel 3 no se documentan los procesos",
+            "El Nivel 3 requiere herramientas de pago"
+        ],
+        ans: 1,
+        exp: "En el Nivel 2 el proyecto gestiona su trabajo particular; en el Nivel 3 existe un proceso estándar organizacional desplegado y adaptable."
     },
     {
         id: 30,
         diff: "Intermedio",
-        cat: "Python",
-        q: "¿Qué diferencia existe entre los operadores `==` e `is` en Python?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuáles son los atributos de proceso evaluados en el Nivel 3?",
         opts: [
-            "No hay diferencia",
-            "`==` compara valores; `is` compara identidad de memoria (si apuntan al mismo objeto)",
-            "`is` es para números; `==` es para strings",
-            "`==` compara referencias de memoria; `is` compara valores"
+            "PA 3.1 (Definición del proceso) y PA 3.2 (Despliegue del proceso)",
+            "PA 2.1 y PA 2.2",
+            "PA 1.1 y PA 4.1",
+            "PA 3.1 y PA 5.1"
         ],
-        ans: 1,
-        exp: "== verifica la igualdad de contenido (valor), mientras que 'is' verifica la identidad (id en memoria)."
+        ans: 0,
+        exp: "El Nivel 3 se evalúa con los atributos PA 3.1 (Process Definition) y PA 3.2 (Process Deployment)."
     },
     {
         id: 31,
         diff: "Intermedio",
-        cat: "Git & GitHub",
-        q: "¿Qué comando usas para traer las últimas actualizaciones de la rama remota e integrarlas (hacer merge) en tu rama local en un solo paso?",
-        opts: ["git fetch", "git pull", "git sync", "git clone"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué se analiza en el Nivel 4 (Proceso Predecible)?",
+        opts: [
+            "Que las tareas se hagan rápido sin importar la calidad",
+            "La utilización de mediciones cuantitativas para comprender y controlar el desempeño del proceso",
+            "La contratación de más personal de soporte",
+            "El uso de metodologías sin datos"
+        ],
         ans: 1,
-        exp: "git pull ejecuta internamente un 'git fetch' seguido de un 'git merge'."
+        exp: "En el Nivel 4 se recopilan y analizan mediciones cuantitativas para operar dentro de límites definidos y predecibles."
     },
     {
         id: 32,
         diff: "Intermedio",
-        cat: "Git & GitHub",
-        q: "¿Cómo se elimina o deshace el último commit pero conservando las modificaciones de tus archivos en el área de trabajo (working directory)?",
-        opts: ["git reset --hard HEAD~1", "git reset --soft HEAD~1", "git revert HEAD", "git checkout HEAD~1"],
-        ans: 1,
-        exp: "git reset --soft deshace el commit manteniendo los cambios en staging/working directory."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué atributos de proceso corresponden al Nivel 4 de SPICE?",
+        opts: [
+            "PA 4.1 (Medición del proceso) y PA 4.2 (Control del proceso)",
+            "PA 3.1 y PA 3.2",
+            "PA 1.1 y PA 5.2",
+            "PA 4.1 y PA 2.2"
+        ],
+        ans: 0,
+        exp: "El Nivel 4 contiene los atributos PA 4.1 (Process Measurement) y PA 4.2 (Process Control)."
     },
     {
         id: 33,
         diff: "Intermedio",
-        cat: "POO",
-        q: "¿Qué pilar de la POO se encarga de restringir el acceso directo a ciertos componentes u ocultar el estado interno de un objeto?",
-        opts: ["Polimorfismo", "Herencia", "Encapsulamiento", "Abstracción"],
-        ans: 2,
-        exp: "El Encapsulamiento oculta el estado interno y expone métodos públicos (getters/setters) para interactuar de forma segura."
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuál es el enfoque central del Nivel 5 (Proceso en Optimización)?",
+        opts: [
+            "Mantener el proceso estático sin hacer cambios",
+            "La mejora continua del proceso orientada por evidencias, evaluando el impacto real de cambios e innovaciones",
+            "Eliminar todas las pruebas de código",
+            "Comprar nuevos servidores anualmente"
+        ],
+        ans: 1,
+        exp: "El Nivel 5 se enfoca en optimizar de forma continua y sistemática la efectividad y eficiencia del proceso a partir de evidencias."
     },
     {
         id: 34,
         diff: "Intermedio",
-        cat: "POO",
-        q: "En JavaScript (ES6), ¿cómo hereda una clase derivada las propiedades y métodos de su clase padre?",
-        opts: ["class Hijo implements Padre", "class Hijo extends Padre", "class Hijo inherits Padre", "class Hijo : Padre"],
-        ans: 1,
-        exp: "La palabra clave 'extends' se utiliza en las declaraciones de clase de ES6 para crear una subclase."
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuáles son los atributos de proceso asignados al Nivel 5?",
+        opts: [
+            "PA 5.1 (Innovación del proceso) y PA 5.2 (Optimización del proceso)",
+            "PA 4.1 y PA 4.2",
+            "PA 1.1 y PA 2.1",
+            "PA 3.1 y PA 5.1"
+        ],
+        ans: 0,
+        exp: "Los atributos del Nivel 5 son PA 5.1 (Process Innovation) y PA 5.2 (Process Optimization)."
     },
     {
         id: 35,
         diff: "Intermedio",
         cat: "Arquitectura & SPICE",
-        q: "¿Qué caracteriza al Nivel 2 (Gestionado) en el modelo de evaluación SPICE ISO/IEC 15504?",
+        q: "¿Qué significa la letra 'N' en la escala de calificación de atributos N-P-L-F?",
         opts: [
-            "El proceso se realiza de manera totalmente caótica e improvisada",
-            "El proceso está planificado, supervisado, ajustado y sus productos de trabajo se gestionan",
-            "La empresa utiliza control estadístico de procesos con métricas avanzadas",
-            "Existe una constante innovación tecnológica automatizada"
+            "Normal (50%)",
+            "No alcanzado (Not achieved: 0% a 15% de logro)",
+            "Nuevo proceso",
+            "Nivel 1 completo"
         ],
         ans: 1,
-        exp: "En el Nivel 2 (Managed), las ejecuciones del proceso se planifican, supervisan y sus artefactos se controlan."
+        exp: "N indica 'No alcanzado': existe poca o ninguna evidencia de logro del atributo en el proceso evaluado (0 a 15%)."
     },
     {
         id: 36,
         diff: "Intermedio",
         cat: "Arquitectura & SPICE",
-        q: "¿Qué diferencia a la norma colombiana NTC 5420-3:2008 respecto al estándar SPICE ISO/IEC 15504?",
+        q: "¿Qué representa la letra 'P' en la escala N-P-L-F?",
         opts: [
-            "NTC 5420-3 evalúa procesos y SPICE mide productos",
-            "NTC 5420-3 se centra en métricas internas de la calidad del producto de software, mientras SPICE evalúa la capacidad del proceso",
-            "Ambas son idénticas y reemplazaron completamente a ISO 9001",
-            "NTC 5420-3 es exclusiva para la arquitectura de hardware"
+            "Parcialmente alcanzado (Partially achieved: >15% a 50% de logro)",
+            "Proceso perfecto",
+            "Pendiente de revisión",
+            "Predecible"
         ],
-        ans: 1,
-        exp: "NTC 5420-3 aborda métricas internas del producto (código, diseño), mientras SPICE mide procesos organizacionales."
+        ans: 0,
+        exp: "P representa 'Parcialmente alcanzado': hay alguna evidencia de logro, pero existen brechas significativas (>15% a 50%)."
     },
     {
         id: 37,
         diff: "Intermedio",
-        cat: "JavaScript",
-        q: "¿Qué es un 'Closure' (Clausura) en JavaScript?",
-        opts: [
-            "Un método para cerrar una ventana del navegador",
-            "La combinación de una función agrupada con referencias a su estado primario (ámbito léxico)",
-            "Un error fatal cuando el stack de llamadas colapsa",
-            "Una sintaxis especial para declarar clases privadas"
-        ],
-        ans: 1,
-        exp: "Un closure le da acceso al scope de una función exterior desde una función interior."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué rango aproximado de logro asigna la categoría 'L' (Largamente alcanzado)?",
+        opts: ["0% a 15%", "15% a 50%", ">50% a 85%", ">85% a 100%"],
+        ans: 2,
+        exp: "La letra L (Largely achieved) indica evidencia de un logro significativo con aspectos menores por ajustar (>50% a 85%)."
     },
     {
         id: 38,
         diff: "Intermedio",
-        cat: "HTML",
-        q: "¿Qué atributo en un elemento `script` hace que se ejecute de forma asíncrona mientras se procesa el HTML sin bloquear el renderizado?",
-        opts: ["defer", "async", "preload", "lazy"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué representa la letra 'F' en la escala de calificación SPICE?",
+        opts: [
+            "Fallo total",
+            "Completamente alcanzado (Fully achieved: >85% a 100% de logro con evidencia sistemática)",
+            "Fase final",
+            "Formato incompleto"
+        ],
         ans: 1,
-        exp: "El atributo 'async' descarga el script en segundo plano y lo ejecuta tan pronto como esté listo sin pausar el parseo del HTML."
+        exp: "F indica 'Completamente alcanzado': existe evidencia completa y sistemática de logro del atributo (>85% a 100%)."
     },
     {
         id: 39,
         diff: "Intermedio",
-        cat: "CSS",
-        q: "¿Cuál es el orden de especificidad en CSS de MAYOR a MENOR?",
-        opts: [
-            "Estilos en línea > ID > Clase/Atributo/Pseudoclase > Elemento/Pseudoelemento",
-            "ID > Estilos en línea > Clase > Elemento",
-            "Elemento > Clase > ID > inline",
-            "Clase > ID > inline > Elemento"
-        ],
-        ans: 0,
-        exp: "La especificidad pondera: 1. Inline styles (1000), 2. IDs (100), 3. Clases/Atributos (10), 4. Elementos (1)."
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuántos atributos de proceso en total incluye el modelo clásico ISO/IEC 15504-2 entre los niveles 1 al 5?",
+        opts: ["5 atributos", "9 atributos de proceso", "12 atributos", "20 atributos"],
+        ans: 1,
+        exp: "Son 9 atributos distribuidos así: PA 1.1 (Nivel 1), PA 2.1 y 2.2 (Nivel 2), PA 3.1 y 3.2 (Nivel 3), PA 4.1 y 4.2 (Nivel 4), PA 5.1 y 5.2 (Nivel 5)."
     },
     {
         id: 40,
         diff: "Intermedio",
-        cat: "Python",
-        q: "¿Qué hace el decorador `@staticmethod` dentro de una clase en Python?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué es la 'Gestión de Productos de Trabajo' (Atributo PA 2.2)?",
         opts: [
-            "Convierte un método en privado",
-            "Permite definir un método que no recibe explícitamente ni la instancia (`self`) ni la clase (`cls`)",
-            "Impide que la clase sea heredada",
-            "Forza a que el método sea asíncrono"
+            "Controlar e identificar los resultados generados (planes, código, casos de prueba, informes)",
+            "Comprar licencias de software",
+            "Vender el producto al cliente",
+            "Evaluar el sueldo de los empleados"
         ],
-        ans: 1,
-        exp: "Un @staticmethod no recibe un primer argumento implícito (ni self ni cls); funciona como una función regular aislada."
+        ans: 0,
+        exp: "PA 2.2 evalúa que los artefactos generados se identifiquen, documenten, revisen y controlen bajo requerimientos de configuración."
     },
     {
         id: 41,
         diff: "Intermedio",
-        cat: "Git & GitHub",
-        q: "¿Para qué sirve el archivo `.gitignore`?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Por qué el nivel de capacidad de un proceso no se obtiene promediando números matemáticos sin fundamento?",
         opts: [
-            "Para listar los autores ignorados del repositorio",
-            "Para indicar qué archivos o carpetas intencionalmente no deben rastrearse por Git",
-            "Para bloquear descargas desde GitHub",
-            "Para borrar commits antiguos"
+            "Porque la norma exige aplicar las reglas de logro estructuradas según las evidencias de cada atributo requeridas por el modelo",
+            "Porque está prohibido usar calculadoras",
+            "Porque el evaluador asigna la nota según su simpatía",
+            "Porque el promediado solo se usa en hardware"
         ],
-        ans: 1,
-        exp: ".gitignore le indica a Git qué archivos intencionalmente no rastreados deben ignorarse (ej: node_modules, .env)."
+        ans: 0,
+        exp: "El nivel de capacidad no es un promedio arbitrario; depende del logro demostrado en los atributos requeridos por las reglas del modelo."
     },
     {
         id: 42,
         diff: "Intermedio",
-        cat: "POO",
-        q: "¿Qué permite el Polimorfismo en la POO?",
+        cat: "Arquitectura & SPICE",
+        q: "¿A qué se refiere la 'Adaptación del proceso' en el Nivel 3 de SPICE?",
         opts: [
-            "Ocultar los archivos fuente del proyecto",
-            "Permite que objetos de distintas clases respondan al mismo mensaje o método según su propia implementación",
-            "Convertir objetos JSON a XML automáticamente",
-            "Hacer que un programa se ejecute en múltiples procesadores"
+            "A ignorar las normas cuando haya prisa",
+            "A ajustar la definición estándar del proceso al contexto del proyecto siguiendo criterios y reglas organizacionales claras",
+            "A cambiar de lenguaje de programación cada semana",
+            "A eliminar las reuniones de seguimiento"
         ],
         ans: 1,
-        exp: "El Polimorfismo permite enviar el mismo mensaje a distintos tipos de objetos y que cada uno actúe a su manera."
+        exp: "Adaptar el proceso en Nivel 3 implica flexibilizar el proceso estándar según el tamaño o riesgo del proyecto respetando pautas definidas."
     },
     {
         id: 43,
         diff: "Intermedio",
         cat: "Arquitectura & SPICE",
-        q: "En el estándar SPICE, ¿en qué consiste la escala de logro N-P-L-F para calificar atributos de proceso?",
+        q: "¿Cuál es la diferencia entre tener cifras registradas y 'Controlar el proceso' en Nivel 4?",
         opts: [
-            "Not, Possible, Likely, Final",
-            "Not achieved (0-15%), Partially (15-50%), Largely (50-85%), Fully achieved (85-100%)",
-            "New, Processed, Loaded, Finished",
-            "Normal, Priority, Low, Fast"
+            "No hay diferencia",
+            "Tener cifras es solo acumular datos; controlar implica relacionar métricas con objetivos y reaccionar ante desviaciones fuera de límite",
+            "Controlar es borrar los datos antiguos",
+            "Medir es solo para la fase de pruebas"
         ],
         ans: 1,
-        exp: "N-P-L-F es la escala de 4 categorías: No alcanzado, Parcialmente alcanzado, Largamente alcanzado y Totalmente alcanzado."
+        exp: "El Nivel 4 exige usar las métricas para analizar desviaciones y tomar acciones correctivas cuantitativas."
     },
     {
         id: 44,
         diff: "Intermedio",
-        cat: "JavaScript",
-        q: "¿Qué devuelve el método `Array.prototype.reduce()`?",
+        cat: "Arquitectura & SPICE",
+        q: "En el guión, ¿con qué se compara el tablero de mediciones del Nivel 4?",
         opts: [
-            "Siempre un nuevo Array filtrado",
-            "Un único valor acumulado tras procesar cada elemento de la lista",
-            "Un valor booleano",
-            "El índice del elemento buscado"
+            "Con un libro de cuentos",
+            "Con el tablero de un automóvil: ver la velocidad ayuda, pero el conductor debe reaccionar si los límites fallan",
+            "Con una pintura artística",
+            "Con un control remoto de TV"
         ],
         ans: 1,
-        exp: "reduce() ejecuta una función reductora sobre cada elemento, devolviendo como resultado un único valor."
+        exp: "Ver la velocidad en el tablero del auto no basta; el conductor debe comprender los límites y actuar si algo se sale de lo esperado."
     },
     {
         id: 45,
         diff: "Intermedio",
-        cat: "Python",
-        q: "¿Qué hace la palabra clave `yield` dentro de una función en Python?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué implica el atributo PA 5.1 (Innovación del proceso)?",
         opts: [
-            "Detiene inmediatamente la ejecución de todo el programa",
-            "Transforma la función en un Generador, devolviendo un valor de forma perezosa (lazy evaluation)",
-            "Lanza una excepción personalizada",
-            "Exporta una variable a nivel global"
+            "Adoptar tecnologías por moda",
+            "Identificar de forma sistemática oportunidades de mejora e innovaciones justificadas por datos",
+            "Reescribir todo el software desde cero",
+            "Eliminar a los líderes de equipo"
         ],
         ans: 1,
-        exp: "yield suspende la ejecución de la función guardando el estado para reanudarla en la siguiente iteración."
+        exp: "PA 5.1 evalúa la capacidad de identificar e incorporar cambios e innovaciones basándose en los objetivos de la organización."
     },
     {
         id: 46,
         diff: "Intermedio",
-        cat: "CSS",
-        q: "¿Qué valor de la propiedad `position` en CSS posiciona un elemento relativo a la ventana del navegador (viewport) independientemente del scroll?",
-        opts: ["relative", "absolute", "fixed", "sticky"],
-        ans: 2,
-        exp: "position: fixed saca al elemento del flujo estándar y lo ancla en relación con la ventana de visualización (viewport)."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué mide el atributo PA 1.1?",
+        opts: [
+            "Desempeño del proceso (si alcanza o no su propósito)",
+            "La velocidad de la conexión a internet",
+            "La satisfacción del gerente",
+            "El número de líneas de código"
+        ],
+        ans: 0,
+        exp: "PA 1.1 es el único atributo del Nivel 1 y mide el grado en que se logra el propósito del proceso."
     },
     {
         id: 47,
         diff: "Intermedio",
-        cat: "Git & GitHub",
-        q: "¿Qué es una 'Pull Request' (PR) en GitHub?",
-        opts: [
-            "Un comando para descargar cambios desde la terminal",
-            "Una propuesta para integrar cambios de una rama a otra, permitiendo revisión de código e inspección de pruebas",
-            "Un error al intentar subir código sin permisos",
-            "Una solicitud para borrar un repositorio remoto"
-        ],
-        ans: 1,
-        exp: "Una Pull Request les informa a otros colaboradores sobre los cambios enviados a una rama en GitHub para su revisión."
+        cat: "Arquitectura & SPICE",
+        q: "Si un equipo ejecuta pruebas pero no guarda versiones ni actualiza los casos al cambiar los requisitos, ¿qué atributo presenta debilidad?",
+        opts: ["PA 2.2 (Gestión de los productos de trabajo)", "PA 5.2", "PA 4.1", "PA 1.1"],
+        ans: 0,
+        exp: "Faltar al control de versiones de casos y registros evidencia fallas en la gestión de productos de trabajo (PA 2.2)."
     },
     {
         id: 48,
         diff: "Intermedio",
-        cat: "POO",
-        q: "¿Cuál es el propósito del operador `super()` en subclases de clases orientadas a objetos?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Puede un proceso de desarrollo estar en Nivel 3 mientras el de mantenimiento se encuentra en Nivel 1 en la misma empresa?",
         opts: [
-            "Hacer que el objeto sea público",
-            "Llamar a métodos o al constructor de la clase padre o superclase",
-            "Destruir la instancia actual de memoria",
-            "Crear una supervariable global"
+            "No, todos deben tener el mismo nivel",
+            "Sí, la evaluación bidimensional evalúa procesos individualmente generando un Perfil de Capacidad",
+            "No, la norma cancela la evaluación",
+            "Solo si es una empresa pública"
         ],
         ans: 1,
-        exp: "super() otorga acceso a los métodos de la clase sobreescrita o al constructor padre."
+        exp: "Debido a la estructura por procesos, la organización obtiene un perfil donde cada proceso muestra su propio nivel de capacidad."
     },
     {
         id: 49,
         diff: "Intermedio",
         cat: "Arquitectura & SPICE",
-        q: "En SPICE ISO/IEC 15504, ¿qué caracteriza a la 'Dimensión de Proceso' frente a la 'Dimensión de Capacidad'?",
+        q: "¿Qué rol cumplen los 'Resultados Esperados' (Outcomes) en la Dimensión de Proceso?",
         opts: [
-            "La dimensión de proceso contiene las métricas en código",
-            "La dimensión de proceso define 'Qué se evalúa' (los objetivos del proceso) y la de capacidad define 'Qué tan bien se realiza'",
-            "Ambas dimensiones miden únicamente la velocidad del servidor",
-            "La dimensión de proceso evalúa el costo económico"
+            "Determinan el sueldo del proyecto",
+            "Son los productos o estados identificables que confirman que el propósito del proceso se ha logrado",
+            "Son las horas trabajadas en la noche",
+            "Son los errores no detectados"
         ],
         ans: 1,
-        exp: "Es la arquitectura bidimensional de SPICE: Proceso (qué se hace) y Capacidad (el grado de madurez)."
+        exp: "Los resultados esperados son las evidencias o logros verificables que demuestran el cumplimiento del propósito."
     },
     {
         id: 50,
         diff: "Intermedio",
-        cat: "HTML",
-        q: "¿Qué elemento semántico de HTML5 debe utilizarse para contenido independiente y autocontenido (como una entrada de blog o una noticia)?",
-        opts: ["<section>", "<div>", "<article>", "<aside>"],
-        ans: 2,
-        exp: "<article> representa una composición autónoma en un documento que se puede distribuir de forma independiente."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué se debe evitar al calificar atributos con la escala N-P-L-F?",
+        opts: [
+            "Usar evidencias escritas",
+            "Asignar calificaciones por intuición o prestigio de la empresa sin evidencias contrastadas",
+            "Entrevistar al personal",
+            "Revisar registros de ejecución"
+        ],
+        ans: 1,
+        exp: "La calificación de atributos no debe basarse en impresiones o reputación, sino en evidencias comprobables de la ejecución real."
     },
 
-    // ================= AVANZADO (25 PREGUNTAS) =================
+    // ================= AVANZADO (51-75): MÉTRICAS INTERNAS DE PRODUCTO (NTC 5420-3) =================
     {
         id: 51,
         diff: "Avanzado",
-        cat: "JavaScript",
-        q: "¿Cuál es el resultado de evaluar `Promise.all([Promise.resolve(1), Promise.reject('Error'), Promise.resolve(3)])`?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuál es la ventaja de evaluar métricas internas según la NTC 5420-3 en etapas tempranas?",
         opts: [
-            "Una promesa resuelta con [1, undefined, 3]",
-            "Una promesa rechazada inmediatamente con la razón 'Error'",
-            "Un arreglo conteniendo el error",
-            "Reintenta las promesas automáticamente"
+            "Aumentar el precio final del software",
+            "Detectar señales de advertencia (como complejidad excesiva) en diseños o código antes del despliegue final",
+            "Evitar contratar desarrolladores",
+            "Reemplazar la evaluación de procesos SPICE"
         ],
         ans: 1,
-        exp: "Promise.all implementa fallo rápido (fail-fast): si cualquiera de las promesas se rechaza, la promesa resultante se rechaza inmediatamente."
+        exp: "Las métricas internas advierten sobre problemas estructurales en artefactos antes de que lleguen a producción o sean costosos de reparar."
     },
     {
         id: 52,
         diff: "Avanzado",
-        cat: "JavaScript",
-        q: "¿Qué mecanismo de JS permite que las variables declaradas con `var` o declaraciones de función sean movidas a la parte superior de su ámbito durante la fase de compilación?",
-        opts: ["Event Loop", "Hoisting", "Clousure", "Currying"],
+        cat: "Arquitectura & SPICE",
+        q: "Si un módulo de software presenta una complejidad interna excesivamente alta, ¿qué consecuencia puede ocurrir según la NTC 5420-3?",
+        opts: [
+            "El módulo será más fácil de entender",
+            "Puede ser más difícil de mantener, modificar y probar, aumentando el riesgo de errores",
+            "El código se ejecutará automáticamente más rápido",
+            "El proceso sube de inmediato a Nivel 5"
+        ],
         ans: 1,
-        exp: "Hoisting (elevación) es el comportamiento predeterminado de mover las declaraciones al principio de su ámbito."
+        exp: "Módulos con alta complejidad estática suelen requerir más esfuerzo de prueba y presentan mayor propensión a fallas en modificaciones."
     },
     {
         id: 53,
         diff: "Avanzado",
-        cat: "CSS",
-        q: "¿Qué hace la propiedad CSS `contain: layout style paint`?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Demuestra una métrica interna aislada por sí sola que un software es 'malo' o 'bueno'?",
         opts: [
-            "Aplica un marco de color al elemento",
-            "Aísla el elemento y su subárbol del resto del DOM para optimizar significativamente el renderizado",
-            "Elimina las animaciones CSS",
-            "Renderiza el elemento mediante WebGL"
+            "Sí, el número lo determina todo",
+            "No, una métrica aislada debe interpretarse dentro de su contexto, tipo de sistema y criterios del proyecto",
+            "Sí, si la métrica es mayor a 10",
+            "Solo si es evaluada en Python"
         ],
         ans: 1,
-        exp: "La propiedad 'contain' permite a los desarrolladores aislar partes de una página, indicando al navegador que no redibuje el resto del DOM."
+        exp: "El guión enfatiza que un número sin explicación o contexto puede conducir a conclusiones equivocadas; las métricas requieren análisis interpretativo."
     },
     {
         id: 54,
         diff: "Avanzado",
-        cat: "Python",
-        q: "En Python, ¿qué es un Administrador de Contexto (Context Manager) y qué métodos dunder requiere una clase para implementarlo?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Requieren las métricas internas de la NTC 5420-3 que el software esté en ejecución real para ser medidas?",
         opts: [
-            "Una clase con métodos __init__ y __del__",
-            "Un objeto que gestiona recursos (como archivos) e implementa los métodos __enter__() y __exit__()",
-            "Un módulo para manejar hilos",
-            "Una función que envuelve un try/except"
+            "Sí, siempre debe estar en servidores de producción",
+            "No, miden propiedades de artefactos estáticos (especificaciones, estructuras, diseños o código fuente)",
+            "Solo si son métricas externas",
+            "Sí, requieren conexión a la nube"
         ],
         ans: 1,
-        exp: "Los context managers (usados con la instrucción 'with') garantizan la liberación de recursos mediante __enter__ y __exit__."
+        exp: "Las métricas internas evalúan las características estáticas de los artefactos sin depender de su ejecución en vivo."
     },
     {
         id: 55,
         diff: "Avanzado",
-        cat: "Python",
-        q: "¿Qué resuelve el concepto de GIL (Global Interpreter Lock) en la implementación CPython?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuál es la relación conceptual entre SPICE (ISO/IEC 15504) y la NTC 5420-3:2008?",
         opts: [
-            "Evita que se filtren contraseñas",
-            "Garantiza que solo un hilo ejecute bytecode de Python a la vez para proteger la gestión de memoria no thread-safe",
-            "Acelera el cálculo con GPU",
-            "Bloquea la edición de archivos .pyc"
+            "Son normas idénticas con distinto nombre",
+            "Son enfoques complementarios: SPICE evalúa los PROCESOS de trabajo y NTC 5420-3 evalúa el PRODUCTO (artefactos)",
+            "NTC 5420-3 elimina los niveles de capacidad de SPICE",
+            "SPICE sustituye todas las métricas de producto"
         ],
         ans: 1,
-        exp: "GIL es un cerrojo en CPython que sincroniza la ejecución de hilos impidiendo multithreading en paralelo real sobre CPU."
+        exp: "No son intercambiables ni opuestas; se complementan. Una evalúa cómo se trabaja (proceso) y la otra mide lo que se construye (producto)."
     },
     {
         id: 56,
         diff: "Avanzado",
-        cat: "Git & GitHub",
-        q: "¿Cuál es la diferencia principal entre `git merge` y `git rebase`?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué riesgo existe si se confunden las métricas de producto con los objetivos de un proceso?",
         opts: [
-            "Merge borra ramas y Rebase crea ramas",
-            "Merge crea un commit de unión preservando el historial; Rebase reescribe el historial aplicando las confirmaciones sobre la rama destino linealmente",
-            "Rebase no se puede usar con GitHub",
-            "Son totalmente equivalentes"
+            "Incentivar prácticas indeseadas, como escribir líneas de código innecesarias solo para inflar un indicador",
+            "Certificación automática en Nivel 5",
+            "Mejora inmediata de la velocidad de red",
+            "Reducción total de costos"
         ],
-        ans: 1,
-        exp: "Git Rebase reescribe la historia del proyecto aplicando tus cambios sobre otra rama de forma lineal."
+        ans: 0,
+        exp: "Premiar exclusivamente una cifra sin contexto (como volumen de líneas) puede provocar burocracia o código basura."
     },
     {
         id: 57,
         diff: "Avanzado",
-        cat: "Git & GitHub",
-        q: "¿Qué comando de Git se utiliza para extraer una confirmación (commit) específica de otra rama y aplicarla en la rama activa actual?",
-        opts: ["git cherry-pick <hash>", "git extract <hash>", "git pull-commit <hash>", "git apply-patch"],
-        ans: 0,
-        exp: "git cherry-pick toma los cambios introducidos en un commit de Git existente y los aplica como un nuevo commit en la rama actual."
+        cat: "Arquitectura & SPICE",
+        q: "En el guión, ¿con qué se compara la medición de la temperatura de una habitación para explicar las métricas de producto?",
+        opts: [
+            "Con saber si la habitación tiene luces LED",
+            "El número por sí solo no indica si el ambiente es adecuado; exige conocer qué actividad se realiza y el rango esperado",
+            "Con medir el tamaño de los muebles",
+            "Con pintar la puerta"
+        ],
+        ans: 1,
+        exp: "Una cifra estática necesita rango y propósito contextualizado para convertirse en información útil de toma de decisiones."
     },
     {
         id: 58,
         diff: "Avanzado",
-        cat: "POO",
-        q: "En el principio SOLID, ¿qué establece el Principio de Sustitución de Liskov (LSP)?",
+        cat: "Arquitectura & SPICE",
+        q: "Si la evaluación de procesos revela revisiones de diseño deficientes y las métricas internas muestran módulos muy complejos, ¿qué debe hacerse?",
         opts: [
-            "Las clases deben ser abiertas para extensión pero cerradas para modificación",
-            "Los objetos de una subclase deben poder reemplazar a los de la superclase sin alterar la corrección del programa",
-            "Una clase debe tener una y solo una razón para cambiar",
-            "Las interfaces deben ser lo más pequeñas posibles"
+            "Ignorar las métricas",
+            "Establecer revisiones sistemáticas de diseño y reestructurar los módulos reduciendo la complejidad",
+            "Borrar el código",
+            "Aumentar el precio de venta"
         ],
         ans: 1,
-        exp: "LSP indica que cualquier subclase debe poder usarse en lugar de su superclase sin que falle la aplicación."
+        exp: "La combinación de ambas herramientas permite corregir la práctica de trabajo (revisiones) y ajustar el producto (refactorización)."
     },
     {
         id: 59,
         diff: "Avanzado",
-        cat: "POO",
-        q: "¿Qué caracteriza al patrón de diseño Factory Method?",
-        opts: [
-            "Asegura que exista una única instancia de una clase",
-            "Define una interfaz para crear un objeto, pero deja que las subclases decidan qué clase instanciar",
-            "Permite añadir responsabilidades dinámicamente a un objeto",
-            "Conecta la base de datos de manera síncrona"
-        ],
-        ans: 1,
-        exp: "Factory Method delega la lógica de instanciación de objetos a las subclases o métodos de fábrica."
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué parte de la norma ISO/IEC 15504:2006 presentaba un modelo de evaluación de procesos de ejemplo?",
+        opts: ["ISO/IEC 15504-5:2006", "ISO/IEC 15504-1", "ISO 9001", "NTC 5420-1"],
+        ans: 0,
+        exp: "La Parte 5 de la serie (ISO/IEC 15504-5:2006) proporcionaba un modelo de evaluación de procesos de ejemplo."
     },
     {
         id: 60,
         diff: "Avanzado",
         cat: "Arquitectura & SPICE",
-        q: "¿Qué nivel de capacidad SPICE (ISO 15504) se requiere para que un proceso sea cuantificable y controlado estadísticamente?",
-        opts: ["Nivel 2 (Gestionado)", "Nivel 3 (Establecido)", "Nivel 4 (Predecible)", "Nivel 5 (Optimizado)"],
-        ans: 2,
-        exp: "El Nivel 4 (Predictable) opera dentro de límites cuantitativos mediante recolección sistemática de métricas."
+        q: "¿Qué parte de la serie ISO/IEC 15504 definía los requisitos formales para realizar una evaluación?",
+        opts: ["ISO/IEC 15504-2", "ISO/IEC 15504-10", "ISO/IEC 9126", "NTC 5420-3"],
+        ans: 0,
+        exp: "ISO/IEC 15504-2 establecía los requisitos fundamentales obligatorios para efectuar una evaluación conforme."
     },
     {
         id: 61,
         diff: "Avanzado",
-        cat: "JavaScript",
-        q: "En el Event Loop de JavaScript, ¿cuál es la diferencia de prioridad entre las Microtareas (Microtasks) y las Macrotareas (Macrotasks/Tasks)?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Por qué al citar ISO/IEC 15504 es necesario especificar la Parte y la Edición del documento?",
         opts: [
-            "Las Macrotareas se ejecutan siempre primero",
-            "Las Microtareas (promesas, queueMicrotask) se procesan completando la cola antes de dar paso a la siguiente Macrotarea (setTimeout, I/O)",
-            "Ambas colas se ejecutan simultáneamente en hilos separados",
-            "Las Microtareas solo funcionan en Node.js"
+            "Porque es una familia de documentos con funciones distintas (requisitos, modelos, guías) que evolucionaron en el tiempo",
+            "Porque es un requisito bancario",
+            "Porque todas las partes dicen exactamente lo mismo",
+            "Para evitar pagar derechos de autor"
         ],
-        ans: 1,
-        exp: "La cola de microtareas se vacía por completo inmediatamente después de la tarea actual y antes de pasar a la siguiente macrotarea."
+        ans: 0,
+        exp: "Al ser una serie de múltiples volúmenes, cada parte aborda aspectos diferentes (marco, requisitos, modelos de ejemplo)."
     },
     {
         id: 62,
         diff: "Avanzado",
-        cat: "JavaScript",
-        q: "¿Qué patrón de diseño o característica implementa la API `Proxy` en JavaScript?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué sucede si una empresa define un proceso estándar de pruebas muy completo pero en la práctica los desarrolladores lo omiten?",
         opts: [
-            "Permite envolver un objeto para interceptar y personalizar operaciones fundamentales como lectura, escritura y definición de propiedades",
-            "Conecta JavaScript directamente con un servidor proxy de red",
-            "Crea una copia profunda de un objeto inmutable",
-            "Compila JS a código nativo WebAssembly"
+            "Logra Nivel 3 automáticamente por tener el documento",
+            "Falta evidencia de despliegue consistente (PA 3.2), por lo que no se alcanza la capacidad esperada",
+            "Se certifica en Nivel 5",
+            "Se le otorga la NTC 5420-3 automáticamente"
         ],
-        ans: 0,
-        exp: "El objeto Proxy permite crear un intermediario para otro objeto, pudiendo interceptar trampas como get, set, apply, etc."
+        ans: 1,
+        exp: "El atributo PA 3.2 exige que el proceso no solo esté escrito, sino efectivamente desplegado y utilizado en la práctica real."
     },
     {
         id: 63,
         diff: "Avanzado",
-        cat: "Python",
-        q: "¿Qué hace la metaclase (`metaclass`) en Python?",
+        cat: "Arquitectura & SPICE",
+        q: "En el guión, ¿con qué se compara un manual de procedimientos que nadie consulta?",
         opts: [
-            "Es una clase que hereda de dict",
-            "Es la 'clase de una clase'; define cómo se comportan y construyen las clases del programa",
-            "Es un módulo para compilar código Python a C",
-            "Un decorador para ocultar código"
+            "Con un libro premiado",
+            "Con el manual de seguridad de un laboratorio guardado en una carpeta: tenerlo guardado no demuestra que se sigan sus instrucciones",
+            "Con una receta exitosa",
+            "Con un certificado de garantía"
         ],
         ans: 1,
-        exp: "Una metaclase es la encargada de definir cómo se construye una clase (del mismo modo que una clase define la construcción de un objeto)."
+        exp: "Tener carpetas o manuales guardados no garantiza que el personal aplique las instrucciones en sus actividades diarias."
     },
     {
         id: 64,
         diff: "Avanzado",
-        cat: "Python",
-        q: "¿Qué diferencia existe en Python entre `__str__` y `__repr__`?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué se examina al evaluar la Gestión del Desempeño (PA 2.1)?",
         opts: [
-            "No hay diferencia",
-            "`__str__` busca una representación legible para el usuario; `__repr__` busca una representación inequívoca para desarrolladores/debugging",
-            "`__repr__` convierte a JSON",
-            "`__str__` es para números; `__repr__` para textos"
+            "Si la ejecución del proceso se planifica, se le hace seguimiento y se ajusta para cumplir los objetivos",
+            "La marca de las computadoras usadas",
+            "La velocidad de la escritura en teclado",
+            "El número de descansos tomados"
         ],
-        ans: 1,
-        exp: "__str__ es para el cliente final y __repr__ para desarrolladores (idealmente debe ser código Python válido para recrear el objeto)."
+        ans: 0,
+        exp: "PA 2.1 evalúa la capacidad de planificar la ejecución, monitorear el avance y ajustar imprevistos en el proyecto."
     },
     {
         id: 65,
         diff: "Avanzado",
-        cat: "Git & GitHub",
-        q: "¿Para qué sirve la funcionalidad `git reflog`?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué permite asegurar la trazabilidad entre requisitos y casos de prueba?",
         opts: [
-            "Para eliminar logs del sistema operativo",
-            "Registra cada cambio del puntero HEAD, permitiendo recuperar commits o ramas eliminadas accidentalmente",
-            "Sincroniza repositorios remotos sin conexión a internet",
-            "Formatea el código antes de hacer commit"
+            "Saber qué requisitos están verificados por pruebas y controlar el impacto cuando un requisito cambia",
+            "Hacer que el código sea más corto",
+            "Evitar hacer reuniones de equipo",
+            "Eliminar la necesidad de base de datos"
         ],
-        ans: 1,
-        exp: "git reflog guarda el historial de hacia dónde apuntaron los punteros localmente, permitiendo rescatar cambios 'perdidos'."
+        ans: 0,
+        exp: "La trazabilidad garantiza que cada función tenga sus pruebas correspondientes y permite medir la cobertura de cambios."
     },
     {
         id: 66,
         diff: "Avanzado",
-        cat: "POO",
-        q: "En los principios SOLID, ¿cuál es la 'D' (Principio de Inversión de Dependencias)?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué rol cumple la Alta Dirección en la implementación de evaluación y mejora de procesos?",
         opts: [
-            "Los módulos de alto nivel no deben depender de los de bajo nivel; ambos deben depender de abstracciones",
-            "Las bases de datos deben ser independientes de la red",
-            "No se deben usar dependencias de librerías externas",
-            "Los objetos deben ser destruidos de inmediato"
+            "Solo firmar cheques de pago",
+            "Apoyar el esfuerzo, asignar recursos, promover una cultura sin castigos y evitar que se vuelva un trámite burocrático",
+            "Escribir todo el código fuente",
+            "Realizar las pruebas unitarias"
         ],
-        ans: 0,
-        exp: "DIP dicta que debemos depender de abstracciones (interfaces) y no de implementaciones concretas."
+        ans: 1,
+        exp: "Sin el respaldo de la dirección y la asignación de recursos, las iniciativas SPI se convierten en trámites aislados sin valor."
     },
     {
         id: 67,
         diff: "Avanzado",
         cat: "Arquitectura & SPICE",
-        q: "¿En qué consiste el Nivel 5 (En optimización) de SPICE ISO/IEC 15504?",
+        q: "¿En qué consiste el riesgo de 'Burocratizar' el trabajo en el contexto de calidad?",
         opts: [
-            "En contratar más programadores juniors",
-            "En la mejora continua cuantitativa y sistemática orientada a cumplir los objetivos de negocio futuros de la organización",
-            "En automatizar el 100% del código con inteligencia artificial",
-            "En migrar todos los servidores a la nube"
+            "Trabajar demasiado rápido",
+            "Crear formatos y documentos excesivos que nadie consulta y no aportan al control de riesgos ni a la coordinación",
+            "Usar computadores portátiles",
+            "Automatizar el testing"
         ],
         ans: 1,
-        exp: "El Nivel 5 (Optimizing) analiza datos del desempeño para realizar innovaciones y mejoras continuas identificables."
+        exp: "Burocratizar es llenar la empresa de papelería sin que esos registros ayuden a tomar decisiones o reducir riesgos reales."
     },
     {
         id: 68,
         diff: "Avanzado",
-        cat: "CSS",
-        q: "¿Qué es el 'BFC' (Block Formatting Context) en CSS y cuál es uno de sus usos clave?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué sucede cuando un equipo siente que las evaluaciones de proceso se usan para buscar culpables y castigar?",
         opts: [
-            "Un tipo de fuente tipográfica",
-            "Una región del renderizado que aísla el diseño de sus elementos hijo; sirve para contener elementos flotantes (clearfix) o evitar colapso de márgenes",
-            "Un marco para crear animaciones 3D",
-            "Una etiqueta HTML descontinuada"
+            "El equipo mejora su rendimiento",
+            "Se tiende a ocultar errores o producir documentos solo para aparentar cumplimiento formal",
+            "El proceso sube inmediatamente a Nivel 4",
+            "Se eliminan los defectos del código"
         ],
         ans: 1,
-        exp: "El BFC es parte del renderizado visual de una página web; evita la superposición de márgenes y contiene elementos con float."
+        exp: "Una cultura punitiva destruye la transparencia; el equipo oculta las fallas en lugar de usarlas como insumo de aprendizaje."
     },
     {
         id: 69,
         diff: "Avanzado",
-        cat: "HTML",
-        q: "¿Para qué sirve el elemento HTML5 `<picture>`?",
+        cat: "Arquitectura & SPICE",
+        q: "Al evaluar una automatización de pruebas en Nivel 5, ¿por qué debe revisarse tanto la eficiencia como los riesgos?",
         opts: [
-            "Para editar fotografías directamente en el navegador",
-            "Para proporcionar múltiples fuentes de imagen (`<source>`) y permitir diseño de imágenes adaptativas según resolución o tipo de imagen",
-            "Para renderizar gráficos vectoriales SVG exclusivamente",
-            "Es un sinónimo idéntico a <img>"
+            "Porque si reducir el tiempo de prueba provoca que no se detecten fallas críticas, la mejora no es exitosa",
+            "Porque la automatización siempre es perfecta",
+            "Porque los robots no cometen errores",
+            "Porque la norma prohíbe automatizar"
         ],
-        ans: 1,
-        exp: "<picture> contiene uno o más elementos <source> y un <img> para ofrecer versiones óptimas de la imagen según media queries o formatos (WebP, AVIF)."
+        ans: 0,
+        exp: "Una mejora debe ser equilibrada: acelerar la ejecución descuidando la cobertura de defectos perjudica la calidad global."
     },
     {
         id: 70,
         diff: "Avanzado",
-        cat: "JavaScript",
-        q: "¿Qué distingue a las estructuras `WeakMap` y `WeakSet` en JavaScript?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuáles son las 4 categorías exactas de la escala de logro de atributos?",
         opts: [
-            "Son versiones más lentas de Map y Set",
-            "Mantienen referencias 'débiles' a objetos, permitiendo que el Garbage Collector libere la memoria si no hay otras referencias activas",
-            "Solo aceptan números y cadenas",
-            "Pueden ser convertidas a JSON con JSON.stringify"
+            "No alcanzado (N), Parcialmente alcanzado (P), Largamente alcanzado (L), Completamente alcanzado (F)",
+            "Nulo, Promedio, Listo, Final",
+            "Bajo, Medio, Alto, Excelente",
+            "Nivel 1, Nivel 2, Nivel 3, Nivel 4"
         ],
-        ans: 1,
-        exp: "Las claves en un WeakMap deben ser objetos y sus referencias son débiles, evitando fugas de memoria (memory leaks)."
+        ans: 0,
+        exp: "Las siglas corresponden a Not achieved (N), Partially achieved (P), Largely achieved (L) y Fully achieved (F)."
     },
     {
         id: 71,
         diff: "Avanzado",
-        cat: "Python",
-        q: "¿Qué utilidad tiene el módulo `asyncio` y la sintaxis `async / await` en Python?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué es el Perfil de Capacidad de una organización?",
         opts: [
-            "Permite multithreading en múltiples núcleos utilizando GIL",
-            "Facilita la programación concurrente monohilo utilizando un bucle de eventos (event loop) para operaciones I/O no bloqueantes",
-            "Sirve únicamente para enviar correos electrónicos",
-            "Aumenta la velocidad de los bucles `for`"
+            "El currículum vitae del gerente",
+            "El conjunto de resultados que muestra los niveles de capacidad alcanzados en cada uno de los procesos evaluados",
+            "La lista de computadoras de la empresa",
+            "El estado de cuenta bancario"
         ],
         ans: 1,
-        exp: "asyncio escribe código concurrente utilizando la sintaxis async/await ideal para programas con cuello de botella en entrada/salida (I/O)."
+        exp: "El perfil resume el nivel obtenido proces por proceso, identificando fortalezas y brechas organizacionales."
     },
     {
         id: 72,
         diff: "Avanzado",
-        cat: "Git & GitHub",
-        q: "¿Qué comando te ayuda a encontrar el commit exacto que introdujo un error utilizando una búsqueda binaria en el historial?",
-        opts: ["git bisect", "git search-bug", "git log --find", "git blame"],
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué se examina en el atributo PA 3.1 (Definición del proceso)?",
+        opts: [
+            "Si existe una descripción estándar del proceso que incluya actividades, roles, artefactos y criterios de entrada/salida",
+            "La velocidad de descarga de archivos",
+            "El precio de los servidores",
+            "La puntualidad del equipo"
+        ],
         ans: 0,
-        exp: "git bisect utiliza búsqueda binaria para encontrar rápidamente qué commit introdujo un bug o regresión."
+        exp: "PA 3.1 verifica que la organización mantenga guías y definiciones estándar para la realización de sus procesos."
     },
     {
         id: 73,
         diff: "Avanzado",
-        cat: "POO",
-        q: "¿En qué consiste el patrón de diseño Observer?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué evalúa el atributo PA 4.2 (Control del proceso)?",
         opts: [
-            "Supervisa el uso de CPU de la aplicación",
-            "Define una dependencia 1 a N entre objetos, de modo que cuando un objeto cambia de estado, todos sus dependientes son notificados automáticamente",
-            "Crea una copia oculta de las clases",
-            "Permite ejecutar código JS desde Python"
+            "La utilización de datos cuantitativos para tomar acciones y corregir desviaciones del desempeño esperadas",
+            "El control de asistencia de los empleados",
+            "El uso de contraseñas de seguridad",
+            "La compra de insumos de oficina"
         ],
-        ans: 1,
-        exp: "El patrón Observer establece un mecanismo de suscripción para notificar eventos a múltiples objetos observadores."
+        ans: 0,
+        exp: "PA 4.2 analiza cómo los datos de medición sirven para mantener el proceso dentro de límites de desempeño estables."
     },
     {
         id: 74,
         diff: "Avanzado",
         cat: "Arquitectura & SPICE",
-        q: "En el modelo SPICE ISO/IEC 15504, ¿cuál es el atributo de proceso `PA 3.1`?",
+        q: "¿Qué evalúa el atributo PA 5.2 (Optimización del proceso)?",
         opts: [
-            "Desempeño del proceso",
-            "Definición del proceso",
-            "Gestión de productos de trabajo",
-            "Optimización del proceso"
+            "La efectividad de los cambios implementados para asegurar que cumplan los objetivos cuantitativos de mejora",
+            "El reemplazo total de los empleados",
+            "La eliminación de todas las reuniones",
+            "El cambio del nombre de la empresa"
         ],
-        ans: 1,
-        exp: "El Atributo de Proceso 3.1 (PA 3.1) corresponde a la Definición del Proceso Estándar de la organización."
+        ans: 0,
+        exp: "PA 5.2 asegura que las acciones de optimización se evalúen cuantitativamente para confirmar que resuelven las causas raíz."
     },
     {
         id: 75,
         diff: "Avanzado",
-        cat: "CSS",
-        q: "¿Qué ventaja ofrece la pseudo-clase CSS `:is()` frente a los selectores tradicionales agrupados por comas?",
+        cat: "Arquitectura & SPICE",
+        q: "En el guión, ¿qué se recomienda antes de intentar extender una evaluación a toda la empresa?",
         opts: [
-            "Hace que el código se ejecute más rápido",
-            "Permite escribir listas de selectores de forma compacta y toma la especificidad del selector más específico del grupo ignorando selectores inválidos",
-            "Reemplaza totalmente a JavaScript",
-            "Aplica estilos solo en móviles"
+            "Comenzar por los procesos más críticos y seleccionar un conjunto reducido de métricas útiles",
+            "Certificar todos los procesos el primer día",
+            "Comprar 100 herramientas distintas",
+            "Despedir al personal con dudas"
         ],
-        ans: 1,
-        exp: ":is() simplifica listas largas de selectores y su especificidad se determina por el argumento más específico."
+        ans: 0,
+        exp: "La implementación práctica sugiere priorizar procesos clave y métricas de alto impacto antes de masificar los modelos."
     },
 
-    // ================= EXPERTO / SENIOR (25 PREGUNTAS) =================
+    // ================= EXPERTO / SENIOR (76-100): CASO PRÁCTICO, ANÁLISIS E INTEGRACIÓN =================
     {
         id: 76,
         diff: "Experto/Senior",
-        cat: "JavaScript",
-        q: "En los motores modernos de JS (como V8), ¿qué son las clases ocultas (Hidden Classes / Shapes) y las comprobaciones en línea (Inline Caches - IC)?",
+        cat: "Arquitectura & SPICE",
+        q: "En el caso práctico de la plataforma de matrículas universitarias, ¿qué problema presentó el proceso de pruebas al ser evaluado con SPICE?",
         opts: [
-            "Mecanismos de seguridad contra ataques XSS",
-            "Optimizaciones del compilador JIT para acelerar el acceso a propiedades de objetos basándose en su estructura interna en memoria",
-            "Funciones avanzadas para renderizar HTML rápido",
-            "Librerías externas para Node.js"
+            "No realizaban pruebas de ningún tipo",
+            "Realizaban pruebas pero la planificación y control de productos de trabajo eran inconsistentes y los casos no estaban actualizados",
+            "El servidor de producción se incendió",
+            "Los desarrolladores no sabían usar teclados"
         ],
         ans: 1,
-        exp: "V8 crea Hidden Classes dinámicamente para rastrear la forma de los objetos y usa Inline Caches para evitar búsquedas repetitivas de propiedades."
+        exp: "La evaluación identificó que ejecutaban pruebas, pero carecían de planificación consistente, control de versiones y trazabilidad de evidencias."
     },
     {
         id: 77,
         diff: "Experto/Senior",
-        cat: "JavaScript",
-        q: "¿Cómo funciona la API de `SharedArrayBuffer` y `Atomics` en JavaScript para entornos multihilo con Web Workers?",
+        cat: "Arquitectura & SPICE",
+        q: "En el mismo caso práctico, ¿qué descubrió el análisis de métricas internas (NTC 5420-3) sobre los módulos con fallas frecuentes?",
         opts: [
-            "Comparten memoria mediante peticiones HTTP",
-            "SharedArrayBuffer comparte un buffer de bytes en memoria compartida y Atomics provee operaciones atómicas thread-safe sin condiciones de carrera",
-            "No es posible compartir memoria en JavaScript",
-            "Es un plugin obsoleto de Flash"
+            "Que los módulos eran demasiado cortos",
+            "Que ciertos componentes (pagos y validación de requisitos) presentaban una alta complejidad interna y estructura difícil de modificar",
+            "Que el código estaba escrito en inglés",
+            "Que los módulos no tenian líneas de código"
         ],
         ans: 1,
-        exp: "Atomics proporciona operaciones estáticas para garantizar la sincronización segura de memoria compartida entre el hilo principal y Web Workers."
+        exp: "La métrica interna señaló complejidad estática elevada en los módulos críticos, facilitando la identificación de cuellos de botella de diseño."
     },
     {
         id: 78,
         diff: "Experto/Senior",
-        cat: "Python",
-        q: "¿Cómo interactúa el Garbage Collector de Python con el conteo de referencias y la recolección de ciclos de referencias circulares?",
+        cat: "Arquitectura & SPICE",
+        q: "Según el caso del guión, ¿cuál fue el plan de acción integral diseñado tras combinar SPICE y NTC 5420-3?",
         opts: [
-            "Python solo usa recolección manual",
-            "Utiliza principalmente conteo de referencias para liberación inmediata y un recolector generacional (GC) para detectar y romper ciclos de referencias inaccesibles",
-            "El GIL elimina automáticamente las referencias cruzadas",
-            "Python no requiere liberación de memoria"
+            "Cancelar la plataforma universitaria",
+            "Mejorar la trazabilidad requisitos-pruebas, controlar versiones de casos, revisar módulos complejos y definir indicadores de seguimiento",
+            "Trabajar fines de semana sin registrar cambios",
+            "Cambiar todos los servidores a otra red"
         ],
         ans: 1,
-        exp: "CPython destruye objetos cuando su conteo de referencias llega a 0; adicionalmente, un algoritmo generacional busca ciclos donde dos objetos se referencian entre sí."
+        exp: "La solución combinó mejoras operacionales de proceso (trazabilidad y control) con refactorizaciones del producto en los módulos complejos."
     },
     {
         id: 79,
         diff: "Experto/Senior",
-        cat: "Python",
-        q: "En arquitectura de software con Python, ¿qué ventaja ofrece el uso del módulo `dataclasses` con `slots=True`?",
+        cat: "Arquitectura & SPICE",
+        q: "Si tras aplicar las mejoras en el caso práctico disminuyen los defectos tardíos sin disparar los costos, ¿qué demuestra esa evidencia?",
         opts: [
-            "Permite cifrar la clase en el disco",
-            "Reduce dramáticamente la huella de memoria y acelera el acceso a atributos al evitar la creación del diccionario implícito `__dict__` por instancia",
-            "Permite ejecutar código en C++",
-            "Convierte la clase en una API REST"
+            "Demuestra que el cambio fue afortunado",
+            "Aporta evidencia sólida de avance e impacto positivo del programa de mejora comparado contra la línea base",
+            "Demuestra que ya no se requiere probar",
+            "Demuestra que el software es perfecto"
         ],
         ans: 1,
-        exp: "__slots__ asigna un espacio fijo de memoria para atributos previniendo la sobrecarga de un __dict__ por cada objeto."
+        exp: "Reducir defectos finales manteniendo eficiencia económica confirma cuantitativamente la validez de las acciones de mejora."
     },
     {
         id: 80,
         diff: "Experto/Senior",
-        cat: "Git & GitHub",
-        q: "¿Cómo se implementa una estrategia de integración continua basada en 'Trunk-Based Development' frente a 'GitFlow'?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuál es la principal lección sobre evaluar con evidencias en lugar de opiniones?",
         opts: [
-            "Trunk-Based ignora la rama main y usa solo develop",
-            "Trunk-Based hace commits frecuentes en una única rama principal (main) con ramas de vida corta, evitando fusiones gigantescas de GitFlow",
-            "GitFlow no utiliza ramas de feature",
-            "Ambas exigen al menos 50 ramas paralelas"
+            "Decir que una empresa 'trabaja bien' no explica qué hace ni lo demuestra; las evidencias convierten impresiones en datos para decidir",
+            "Las opiniones del cliente valen más que los datos",
+            "Las evidencias solo sirven para auditorías bancarias",
+            "Los datos no importan en el desarrollo moderno"
         ],
-        ans: 1,
-        exp: "Trunk-Based Development fomenta integraciones continuas pequeñas y frecuentes sobre el tronco principal frente a ramas duraderas como en GitFlow."
+        ans: 0,
+        exp: "Las afirmaciones abstractas no justifican mejoras; la evaluación formal requiere registros y evidencias contrastadas."
     },
     {
         id: 81,
         diff: "Experto/Senior",
-        cat: "POO",
-        q: "En diseño orientado a objetos avanzado, ¿qué es el anti-patrón 'God Object' (Objeto Dios)?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué diferencia existe en la vigencia normativa entre utilizar ISO/IEC 15504:2006 como estudio académico o en un proyecto formal actual?",
         opts: [
-            "Un objeto que nunca puede ser instanciado",
-            "Una clase centralizada que sabe demasiado o hace demasiado, violando el Principio de Responsabilidad Única (SRP)",
-            "Un patrón oficial de la banda de los cuatro (GoF)",
-            "Un tipo de base de datos relacional"
+            "No hay ninguna diferencia",
+            "15504:2006 tiene valor histórico y conceptual, pero para proyectos actuales se debe verificar la familia ISO/IEC 33000 vigente",
+            "ISO 15504 está prohibida mundialmente",
+            "ISO 33000 es solo para productos de hardware"
         ],
         ans: 1,
-        exp: "Un God Object o Blob es un anti-patrón donde una clase acumula la mayoría de datos y responsabilidades de la aplicación."
+        exp: "La serie 15504 evolucionó a la familia ISO/IEC 33000; un entorno profesional formal debe consultar los catálogos vigentes."
     },
     {
         id: 82,
         diff: "Experto/Senior",
         cat: "Arquitectura & SPICE",
-        q: "En una evaluación SPICE (ISO 15504), ¿cuál es la diferencia crítica entre el modelo de madurez CMMI (representación escalonada) y SPICE (representación continua)?",
+        q: "¿Por qué un nivel alto de capacidad en el proceso de pruebas no elimina la necesidad de controlar la calidad de los requisitos?",
         opts: [
-            "CMMI evalúa procesos individualmente sin niveles de organización",
-            "SPICE utiliza un enfoque continuo donde cada proceso individual evaluado recibe un nivel de capacidad independiente (Perfil de Capacidad)",
-            "SPICE solo aplica para proyectos de hardware",
-            "CMMI no requiere evidencias documentadas"
+            "Porque si los requisitos son ambiguos, las pruebas verificarán un comportamiento incorrecto desde el origen",
+            "Porque la norma prohíbe probar requisitos",
+            "Porque los requisitos no forman parte del software",
+            "Porque las pruebas se hacen después de vender el producto"
         ],
-        ans: 1,
-        exp: "La representación continua de SPICE permite evaluar cada proceso de manera independiente produciendo un Perfil de Capacidad claro."
+        ans: 0,
+        exp: "Procesos organizados en una etapa no compensan fallas fundamentales en etapas previas como la toma de requisitos."
     },
     {
         id: 83,
         diff: "Experto/Senior",
-        cat: "CSS",
-        q: "¿Qué resuelve el principio de diseño CSS conocido como 'ITCSS' (Inverted Triangle CSS)?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué representa el concepto de 'Línea Base' en un proyecto SPI?",
         opts: [
-            "Un plugin para centrar divs verticalmente",
-            "Una arquitectura en capas para organizar hojas de estilo de mayor especificidad a menor especificidad evitando conflictos de cascada",
-            "Una propiedad para crear triángulos gráficos con borde",
-            "Un compilador de TypeScript a CSS"
+            "La primera línea del código fuente",
+            "La descripción y medición del desempeño actual antes de aplicar cambios, usada para comparar resultados futuros",
+            "La firma del contrato de trabajo",
+            "El límite de memoria RAM del servidor"
         ],
         ans: 1,
-        exp: "ITCSS organiza los archivos CSS en capas desde lo más genérico (resets) a lo más explícito (componentes/overrides) controlando la cascada."
+        exp: "La línea base fija la foto inicial del desempeño para verificar empíricamente si la mejora surtió efecto."
     },
     {
         id: 84,
         diff: "Experto/Senior",
-        cat: "JavaScript",
-        q: "¿Qué es la 'ZTP' (Zero-Text-Node Policy) o virtualización del DOM en frameworks de renderizado?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Por qué el Nivel 0 no implica necesariamente que la empresa no realice ninguna tarea de desarrollo?",
         opts: [
-            "Una política para eliminar comentarios de texto en el código",
-            "Técnicas avanzadas para mantener solo los nodos visibles en el viewport minimizando el consumo de memoria del DOM del navegador",
-            "Eliminar todas las etiquetas <p> de la web",
-            "Formatear strings antes de guardarlos en BD"
+            "Porque pueden realizarse tareas improvisadas o aisladas pero sin alcanzar el propósito de manera consistente ni completa",
+            "Porque Nivel 0 significa que la empresa cerró",
+            "Porque el Nivel 0 exige automatización",
+            "Porque el Nivel 0 es para proyectos finalizados"
         ],
-        ans: 1,
-        exp: "La virtualización renderiza únicamente una subsección de datos grandes visible en la pantalla para mantener rendimiento a 60fps."
+        ans: 0,
+        exp: "En Nivel 0 puede haber actividades intermitentes, pero los resultados no se obtienen de forma sistemática o suficiente."
     },
     {
         id: 85,
         diff: "Experto/Senior",
-        cat: "Python",
-        q: "En programación orientada a objetos en Python, ¿cómo funciona el algoritmo MRO (Method Resolution Order) basado en C3 Linearization?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué se debe hacer si una acción de mejora implementada en Nivel 5 no arroja los resultados esperados tras ser evaluada?",
         opts: [
-            "Recorre las clases secundarias al azar",
-            "Garantiza un orden determinista de búsqueda de métodos en herencia múltiple respetando la precedencia local y la monotonicidad",
-            "Elimina métodos duplicados en tiempo de ejecución",
-            "Solo funciona con clases abstractas"
+            "Ocultar los datos a la directiva",
+            "Analizar las causas, revisar la estrategia introducida y hacer los ajustes necesarios o revertir la acción",
+            "Subir la nota de capacidad de forma manual",
+            "Dar por terminado el proceso de software"
         ],
         ans: 1,
-        exp: "El algoritmo C3 Linearization resuelve el problema del diamante en herencia múltiple de Python calculando un orden MRO estricto."
+        exp: "El Nivel 5 se basa en ciclos de aprendizaje: si un experimento de mejora falla, los datos orientan su reformulación."
     },
     {
         id: 86,
         diff: "Experto/Senior",
-        cat: "Git & GitHub",
-        q: "¿Para qué se utiliza el comando `git filter-repo` (o el histórico `git filter-branch`)?",
+        cat: "Arquitectura & SPICE",
+        q: "Si se compara la gestión de pruebas con una cocina de restaurante (según el guión), ¿qué equivaldría a Nivel 2?",
         opts: [
-            "Para filtrar líneas de código duplicadas",
-            "Para reescribir permanentemente el historial entero del repositorio (por ejemplo, para purgar datos sensibles como claves expuestas)",
-            "Para generar un archivo ZIP comprimido",
-            "Para hacer deploy automático en AWS"
+            "Cocinar sin receta y de memoria",
+            "Organizar ingredientes, tiempos, definir responsabilidades y confirmar que la información de la comanda sea la correcta",
+            "Crear una franquicia multinacional de restaurantes",
+            "Medir la temperatura atómica del horno"
         ],
         ans: 1,
-        exp: "git filter-repo modifica el árbol de commits en todo el historial para eliminar secretos, archivos grandes o datos sensibles."
+        exp: "Organizar la preparación, controlar insumos y coordinar responsabilidades equivale a la planificación y control de Nivel 2."
     },
     {
         id: 87,
         diff: "Experto/Senior",
-        cat: "POO",
-        q: "¿En qué consiste la técnica de 'Refactorización a Patrón Strategy' cuando se tienen múltiples estructuras condicionales complejas (`if/else` o `switch` anidados)?",
+        cat: "Arquitectura & SPICE",
+        q: "¿A qué equivale el Nivel 3 en la analogía de la receta de cocina del guión?",
         opts: [
-            "Reemplazar condicionales encadenadas por clases de algoritmos intercambiables encapsulados tras una interfaz común",
-            "Borrar el código condicional y usar excepciones",
-            "Mover todas las variables a una BD NoSQL",
-            "Reescribir el programa en C++"
+            "Documentar un método estándar que distintas sedes o cocineros pueden seguir y adaptar bajo reglas comunes",
+            "Cocinar cada día un plato completamente diferente sin anotar nada",
+            "Comprar comida rápida ya hecha",
+            "Cerrar la cocina"
         ],
         ans: 0,
-        exp: "El patrón Strategy encapsula los diferentes algoritmos en clases separadas permitiendo alternarlos limpiamente sin condicionales gigantes."
+        exp: "El Nivel 3 establece la receta estandarizada y desplegada para que la calidad sea consistente entre distintos equipos."
     },
     {
         id: 88,
         diff: "Experto/Senior",
         cat: "Arquitectura & SPICE",
-        q: "¿Qué implica la norma de métricas internas NTC 5420-3 (ISO/IEC 9126-3) en la etapa de diseño de arquitectura de software?",
+        q: "¿Cómo se relacionan los indicadores y las evidencias en la Dimensión de Proceso?",
         opts: [
-            "Define los precios de venta del software en Colombia",
-            "Permite evaluar cuantitativamente la complejidad, mantenibilidad y modularidad de artefactos antes de la compilación o despliegue final",
-            "Garantiza que el servidor no consuma energía",
-            "Sustituye completamente los métodos de prueba unitaria"
+            "Los indicadores orientan al evaluador sobre qué evidencias buscar para confirmar si se producen los resultados esperados",
+            "Los indicadores reemplazan la necesidad de recopilar evidencias",
+            "Las evidencias se inventan a partir de los indicadores",
+            "No tienen ninguna relación"
         ],
-        ans: 1,
-        exp: "Las métricas internas miden propiedades estáticas de artefactos intermediate (diseños, especificaciones) para anticipar problemas de calidad."
+        ans: 0,
+        exp: "Los indicadores actúan como guías para rastrear pruebas tangibles (artefactos, registros) en la evaluación."
     },
     {
         id: 89,
         diff: "Experto/Senior",
-        cat: "HTML",
-        q: "¿Qué son los 'Web Components' y cuáles son sus tres estándares fundamentales en la plataforma Web nativa?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Cuál es el error de concluir que toda una empresa tiene Nivel 4 evaluando solo a su mejor equipo?",
         opts: [
-            "React, Angular y Vue",
-            "Custom Elements, Shadow DOM y HTML Templates",
-            "HTTP/2, HTTPS y WebSockets",
-            "Node.js, Express y MongoDB"
+            "Falta de cobertura del alcance: la capacidad debe sustentarse en evidencias representativas de las unidades dentro del alcance definido",
+            "No hay ningún error, es la práctica recomendada",
+            "La norma obliga a promediar con las empresas competidoras",
+            "El único error es no usar gráficos de colores"
         ],
-        ans: 1,
-        exp: "Los Web Components nativos se basan en Custom Elements, Shadow DOM (aislamiento de DOM/CSS) y <template>."
+        ans: 0,
+        exp: "Generalizar los logros de un equipo sobresaliente a toda la organización invalida el alcance real de la evaluación."
     },
     {
         id: 90,
         diff: "Experto/Senior",
-        cat: "CSS",
-        q: "¿Qué hace la función CSS `clamp(MIN, VAL, MAX)` y cómo optimiza la tipografía fluida?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Por qué no se debe adoptar una herramienta o norma de calidad únicamente 'por moda'?",
         opts: [
-            "Comprime imágenes CSS",
-            "Calcula un valor dinámico entre una escala mínima y máxima preferida sin requerir múltiples media queries",
-            "Corta el texto sobrante con puntos suspensivos",
-            "Desactiva las animaciones en pantallas táctiles"
+            "Porque la innovación debe responder a necesidades justificadas por datos y aportar valor real al desempeño o al producto",
+            "Porque las modas son ilegales en la ingeniería",
+            "Porque las herramientas modernas siempre fallan",
+            "Porque la norma prohíbe actualizar tecnología"
         ],
-        ans: 1,
-        exp: "clamp() permite elegir un valor intermedio de una escala que se escala dinámicamente según la pantalla entre límites estritos."
+        ans: 0,
+        exp: "Adoptar herramientas sin diagnosticar la causa raíz produce gasto financiero sin resolver las deficiencias del proceso."
     },
     {
         id: 91,
         diff: "Experto/Senior",
-        cat: "JavaScript",
-        q: "¿Qué es el fenómeno de 'Memory Leak' por variables globales no intencionadas o Closures desprendidos en JS y cómo identificarlo?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué papel juega la trazabilidad cuando cambia un requisito a mitad de un proyecto gestionado (Nivel 2)?",
         opts: [
-            "Un error de sintaxis que detiene el compilador",
-            "La retención indeseada de espacio en el Heap de memoria por objetos que ya no se usan; se diagnostica mediante Heap Snapshots en DevTools",
-            "Un ataque informático que satura la memoria del cliente",
-            "Cuando se borra una variable const"
+            "Permite registrar el cambio, analizar su impacto, actualizar casos de prueba asociados y verificar la versión correcta",
+            "Obliga a borrar todo el proyecto y empezar de nuevo",
+            "Ignorar el cambio para cumplir el horario",
+            "Modificar el código en secreto sin documentar"
         ],
-        ans: 1,
-        exp: "Los memory leaks ocurren cuando objetos inalcanzables siguen siendo referenciados en el árbol del Garbage Collector."
+        ans: 0,
+        exp: "La gestión de cambios y trazabilidad evita incoherencias entre la especificación, el código y las pruebas ejecutadas."
     },
     {
         id: 92,
         diff: "Experto/Senior",
-        cat: "Python",
-        q: "¿En qué consiste el principio de 'Duck Typing' en Python?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Por qué la NTC 5420-3 complementa a SPICE sin sustituir la necesidad de realizar pruebas de software?",
         opts: [
-            "Es un módulo para procesar sonido de aves",
-            "'Si camina como un pato y suena como un pato, es un pato'; el tipo de un objeto se determina por sus métodos/atributos y no por su clase de herencia explícita",
-            "Un decorador para convertir funciones a clases",
-            "Una prueba unitaria que valida errores de sintaxis"
+            "Porque las métricas internas miden propiedades estáticas de artefactos, pero no sustituyen la verificación dinámica del comportamiento del sistema",
+            "Porque la NTC 5420-3 es solo un borrador",
+            "Porque SPICE exige eliminar las pruebas de integración",
+            "Porque los clientes no leen métricas"
         ],
-        ans: 1,
-        exp: "Duck Typing evalúa los objetos por su comportamiento (qué métodos soportan) en lugar de verificar su tipo estático o herencia."
+        ans: 0,
+        exp: "Analizar el código o diseño (estático) detecta anomalías estructurales, pero la ejecución de pruebas (dinámico) confirma la funcionalidad."
     },
     {
         id: 93,
         diff: "Experto/Senior",
-        cat: "Git & GitHub",
-        q: "¿Qué ventaja ofrece `git worktree` sobre hacer clones múltiples del mismo repositorio?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué se requiere para que un proceso alcance la calificación de 'Completamente alcanzado' (F) en un atributo?",
         opts: [
-            "Permite trabajar en múltiples ramas simultáneamente en diferentes directorios vinculados a una misma copia de repositorio .git",
-            "Elimina el requisito de instalar Git",
-            "Aumenta la velocidad del internet",
-            "Convierte repositorios privados en públicos"
+            "Demostrar evidencia sistemática y completa del logro del atributo entre un 85% y 100% sin brechas significativas",
+            "Pagar la certificación en dólares",
+            "Contar con 100 empleados en el área de QA",
+            "Demostrar que no se cometió ningún error en 5 años"
         ],
         ans: 0,
-        exp: "git worktree permite tener varios árboles de trabajo vinculados al mismo repositorio local sin necesidad de clonar múltiples veces."
+        exp: "La calificación F implica un dominio y cumplimiento sistemático, sustentado en evidencias sólidas de la práctica examinada."
     },
     {
         id: 94,
         diff: "Experto/Senior",
-        cat: "POO",
-        q: "¿Qué establece el Principio de Segregación de Interfaces (ISP) de SOLID?",
+        cat: "Arquitectura & SPICE",
+        q: "En el guión, ¿qué diferencia se señala entre un proceso 'Gestionado' (Nivel 2) y un proceso 'Establecido' (Nivel 3)?",
         opts: [
-            "Ningún cliente debe ser forzado a depender de métodos o interfaces que no utiliza",
-            "Todas las interfaces deben colocarse en un solo archivo",
-            "Las interfaces deben cambiarse diariamente",
-            "Solo se permite una interfaz por proyecto"
+            "En el Nivel 2 el proyecto gestiona su trabajo particular; en el Nivel 3 se aplica un proceso estándar definido a nivel organizacional",
+            "El Nivel 2 usa mediciones estadísticas y el Nivel 3 no",
+            "El Nivel 3 es exclusivo para desarrollo web",
+            "No hay diferencia, son sinónimos"
         ],
         ans: 0,
-        exp: "ISP aboga por interfaces pequeñas y específicas en lugar de interfaces masivas e incoherentes."
+        exp: "Nivel 2 logra control a nivel de proyecto local; Nivel 3 institucionaliza una metodología estándar para la organización."
     },
     {
         id: 95,
         diff: "Experto/Senior",
         cat: "Arquitectura & SPICE",
-        q: "¿Cuál es el propósito del proceso 'SUP.8' en el modelo de referencia ISO/IEC 15504 (SPICE)?",
+        q: "¿Cuál es el peligro de realizar comparaciones entre métricas obtenidas con métodos o herramientas distintas?",
         opts: [
-            "Venta de licencias comercializables",
-            "Gestión de la Configuración del Software (garantizar la integridad de los productos de trabajo y su trazabilidad)",
-            "Pruebas de estrés en servidores cloud",
-            "Diseño de interfaces gráficas UX/UI"
+            "Producir datos no comparables que distorsionen el análisis y lleven a decisiones erróneas",
+            "Aumentar la velocidad del procesador",
+            "Mejorar automáticamente la calidad del código",
+            "Obtener una certificación ISO de inmediato"
         ],
-        ans: 1,
-        exp: "El proceso SUP.8 (Software Configuration Management) asegura la trazabilidad, control de versiones y almacenamiento de artefactos."
+        ans: 0,
+        exp: "Para comparar indicadores de forma válida es imprescindible mantener consistencia en los criterios de recolección y medición."
     },
     {
         id: 96,
         diff: "Experto/Senior",
-        cat: "JavaScript",
-        q: "¿Qué es el patrón 'Currying' en programación funcional con JS?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué aspecto debe cuidarse al adaptar un proceso estándar (Nivel 3) a un proyecto pequeño?",
         opts: [
-            "Transformar una función que toma múltiples argumentos en una secuencia de funciones que toman un solo argumento cada una",
-            "Un método para formatear fechas a texto local",
-            "Una técnica para ejecutar código asíncrono",
-            "Una extensión de VS Code"
+            "Asegurar que la adaptación respete las reglas organizacionales y no se convierta en una improvisación informal",
+            "Eliminar todas las actividades de verificación",
+            "Impedir que el proyecto tenga entregables",
+            "Aumentar el número de reuniones al triple"
         ],
         ans: 0,
-        exp: "Currying evalúa f(a,b,c) como f(a)(b)(c) permitiendo la aplicación parcial de argumentos."
+        exp: "Tailoring (adaptación) en Nivel 3 permite simplificar artefactos para proyectos pequeños sin perder los controles mínimos del estándar."
     },
     {
         id: 97,
         diff: "Experto/Senior",
-        cat: "Python",
-        q: "¿Qué hace la función `sys.setrecursionlimit()` en Python y qué riesgo conlleva incrementarla de manera desmedida?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Qué persigue el atributo PA 4.1 (Medición del proceso)?",
         opts: [
-            "Aumenta la RAM de la tarjeta de vídeo",
-            "Aumenta el límite del Call Stack de recursión; si se incrementa demasiado puede provocar un Stack Overflow que crashie el intérprete de CPython sin captura de excepción",
-            "Incrementa el número de hilos de CPU disponibles",
-            "Optimiza el Garbage Collector"
+            "Recopilar y almacenar datos cuantitativos de desempeño alineados con los objetivos del proceso",
+            "Contar las horas de llegada del personal",
+            "Medir la temperatura de la oficina",
+            "Evaluar las opiniones personales de los usuarios"
         ],
-        ans: 1,
-        exp: "Modificar el límite de recursión por encima de la capacidad de la pila de C resulta en violaciones de segmento de bajo nivel."
+        ans: 0,
+        exp: "PA 4.1 establece la infraestructura de medición identificando qué medir, cómo medir y registrando datos de forma sistemática."
     },
     {
         id: 98,
         diff: "Experto/Senior",
-        cat: "CSS",
-        q: "¿Qué es la especificación 'CSS Container Queries' (`@container`) y cómo revoluciona el diseño responsivo frente a las Media Queries convencionales?",
+        cat: "Arquitectura & SPICE",
+        q: "¿Cómo ayuda la trazabilidad entre defectos y requisitos a la mejora continua (SPI)?",
         opts: [
-            "Permite aplicar estilos al navegador completo",
-            "Permite aplicar estilos a un elemento según el tamaño de su contenedor padre inmediato y no únicamente según la pantalla del viewport",
-            "Una herramienta para compilar archivos Docker con CSS",
-            "Una función para importar iconos SVG"
+            "Permite identificar si los defectos recurrentes provienen de ambigüedades en la fase de requisitos y ajustar esa práctica",
+            "Haciendo que los requisitos se borren automáticamente",
+            "Garantizando que no existan cambios en el contrato",
+            "Evitando que los clientes hagan preguntas"
         ],
-        ans: 1,
-        exp: "Container Queries permite crear componentes verdaderamente modulares respondiendo al ancho de su contenedor directo."
+        ans: 0,
+        exp: "Analizar el origen de los defectos orienta las acciones de mejora directamente hacia las etapas que generan las inconsistencias."
     },
     {
         id: 99,
         diff: "Experto/Senior",
-        cat: "POO",
-        q: "En patrones de arquitectura de software, ¿cuál es la responsabilidad de un 'Repository Pattern'?",
+        cat: "Arquitectura & SPICE",
+        q: "En conclusión, ¿cuál es el verdadero beneficio de implementar un marco como SPICE junto con la NTC 5420-3?",
         opts: [
-            "Mediador entre la capa de dominio y el mapeo de datos / almacenamiento persistente, simulando una colección en memoria",
-            "Almacenar el código fuente en GitHub",
-            "Servir archivos estáticos HTML",
-            "Controlar las cookies del navegador"
+            "Obtener mayor visibilidad, control de riesgos y tomar decisiones de mejora basadas en evidencias para aportar valor real",
+            "Llenar carpetas de documentos para aprobar auditorías externas",
+            "Aumentar la burocracia dentro de los equipos de desarrollo",
+            "Reemplazar a los líderes de proyecto por inspectores"
         ],
         ans: 0,
-        exp: "El patrón Repository encapsula la lógica para acceder a las fuentes de datos aislando la capa de negocio de detalles de infraestructura."
+        exp: "El valor estratégico radica en comprender el desempeño real de la organización, mitigar riesgos y tomar decisiones basadas en datos."
     },
     {
         id: 100,
         diff: "Experto/Senior",
         cat: "Arquitectura & SPICE",
-        q: "¿Qué objetivo persigue la integración de métricas NTC 5420-3 y evaluaciones SPICE en un ciclo de vida SPI (Software Process Improvement)?",
+        q: "¿Qué resumen sintético del guión define la búsqueda constante de la calidad en ingeniería de software?",
         opts: [
-            "Reducir los sueldos del equipo de desarrollo",
-            "Establecer una línea base cuantitativa tanto del Proceso (capacidad operacional) como del Producto (calidad interna) para decisiones basadas en evidencias",
-            "Sustituir a los desarrolladores por evaluadores externos",
-            "Eliminar la necesidad de realizar pruebas unitarias"
+            "La calidad no es buscar un número alto ni llenar documentos; es comprender cómo se trabaja, medir lo pertinente y comprobar que las mejoras funcionen",
+            "La calidad es comprar la computadora más cara del mercado",
+            "La calidad consiste en no hacer pruebas y confiar en los programadores",
+            "La calidad depende únicamente de utilizar un lenguaje moderno"
         ],
-        ans: 1,
-        exp: "Combinar SPICE (procesos) y NTC 5420-3 (métricas internas de producto) brinda un marco completo de mejora basada en evidencias sólidas."
+        ans: 0,
+        exp: "Como concluye el guión de la exposición, la calidad requiere entender los procesos, medir con criterio y validar que las acciones aporten valor."
     }
 ];
