@@ -136,7 +136,7 @@ const questionsData = [
         diff: "Fácil",
         cat: "HTML",
         q: "¿Qué etiqueta de HTML5 se utiliza para incluir un código de JavaScript externo o embebido?",
-        opts: ["<javascript>", "<script>", "<js>", "<code.js>"],
+        opts: ["javascript>", "script", "js", "code.js"],
         ans: 1,
         exp: "La etiqueta <script> se utiliza para insertar o hacer referencia a scripts ejecutables."
     },
@@ -199,9 +199,9 @@ const questionsData = [
         diff: "Fácil",
         cat: "HTML",
         q: "¿Qué etiqueta se debe usar para crear una lista ordenada numéricamente?",
-        opts: ["<ul>", "<ol>", "<li>", "<dl>"],
+        opts: ["ul", "ol", "li", "dl"],
         ans: 1,
-        exp: "<ol> crea una lista ordenada (Ordered List)."
+        exp: "ol crea una lista ordenada (Ordered List)."
     },
     {
         id: 23,
@@ -369,7 +369,7 @@ const questionsData = [
         id: 38,
         diff: "Intermedio",
         cat: "HTML",
-        q: "¿Qué atributo en un elemento `<script>` hace que se ejecute de forma asíncrona mientras se procesa el HTML sin bloquear el renderizado?",
+        q: "¿Qué atributo en un elemento `script` hace que se ejecute de forma asíncrona mientras se procesa el HTML sin bloquear el renderizado?",
         opts: ["defer", "async", "preload", "lazy"],
         ans: 1,
         exp: "El atributo 'async' descarga el script en segundo plano y lo ejecuta tan pronto como esté listo sin pausar el parseo del HTML."
