@@ -5,7 +5,7 @@ const questionsData = [
         diff: "Fácil",
         cat: "HTML",
         q: "¿Cuál es la etiqueta HTML5 correcta para definir la cabecera principal de un sitio web o sección?",
-        opts: ["<header>", "<head>", "<top>", "<navbar>"],
+        opts: ["header", "head", "top", "navbar"],
         ans: 0,
         exp: "La etiqueta <header> en HTML5 representa un grupo de soporte introductorio o de navegación."
     },

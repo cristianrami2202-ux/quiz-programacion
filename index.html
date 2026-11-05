@@ -4,41 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevMaster 100 - Evaluador & Práctica de Programación</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0f9ff',
-                            
-                            500: '#06b6d4',
-                            600: '#0891b2',
-                            700: '#0e7490',
-                            900: '#164e63',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+
+    <!-- Tailwind CSS Carga Local (Offline) -->
+    <link rel="stylesheet" href="tailwind.min.css">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Ajustes de compatibilidad de colores */
+        body { background-color: #0f172a; color: #f8fafc; font-family: ui-sans-serif, system-ui, sans-serif; }
+        .bg-slate-900 { background-color: #0f172a !important; }
+        .bg-slate-800 { background-color: #1e293b !important; }
+        .border-slate-700 { border-color: #334155 !important; }
+        .border-slate-800 { border-color: #1e293b !important; }
+        .text-slate-100 { color: #f8fafc !important; }
+        .text-slate-300 { color: #cbd5e1 !important; }
+        .text-slate-400 { color: #94a3b8 !important; }
+        .bg-cyan-600 { background-color: #0891b2 !important; }
+        .text-cyan-400 { color: #22d3ee !important; }
+        button { cursor: pointer; }
+    </style>
 </head>
 <body class="h-full font-sans antialiased flex flex-col bg-slate-900 text-slate-100">
 
     <!-- Top Navigation Header -->
-    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+    <header class="sticky top-0 z-50 bg-slate-900 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-3">
-                    <div class="bg-gradient-to-tr from-cyan-500 to-blue-600 p-2.5 rounded-xl shadow-lg shadow-cyan-500/20">
+                    <div class="bg-cyan-600 p-2.5 rounded-xl shadow-lg">
                         <i class="fa-solid fa-code text-xl text-white"></i>
                     </div>
                     <div>
-                        <h1 class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                        <h1 class="text-xl font-bold text-cyan-400">
                             DevMaster 100
                         </h1>
                         <p class="text-xs text-slate-400 hidden sm:block">Evaluación & Práctica de Programación</p>
@@ -47,11 +45,11 @@
 
                 <!-- Navigation Tabs -->
                 <nav class="flex bg-slate-800 p-1 rounded-xl border border-slate-700">
-                    <button id="tab-practice" onclick="switchTab('practice')" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 bg-cyan-600 text-white shadow">
+                    <button id="tab-practice" onclick="switchTab('practice')" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all bg-cyan-600 text-white shadow">
                         <i class="fa-solid fa-book-open"></i>
                         <span>Modo Práctica</span>
                     </button>
-                    <button id="tab-exam" onclick="switchTab('exam')" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-slate-400 hover:text-white transition-all duration-200">
+                    <button id="tab-exam" onclick="switchTab('exam')" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-slate-400 hover:text-white transition-all">
                         <i class="fa-solid fa-graduation-cap"></i>
                         <span>Modo Examen</span>
                     </button>
@@ -66,15 +64,14 @@
         <!-- ================= MODO PRÁCTICA ================= -->
         <section id="practice-view" class="space-y-6">
             <!-- Header Controls & Search -->
-            <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/60 shadow-xl space-y-4">
+            <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 shadow-xl space-y-4">
                 <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div class="relative flex-grow">
-                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
                         <input type="text" id="search-input" oninput="renderPractice()" placeholder="Buscar conceptos, sintaxis o preguntas..." 
-                            class="w-full pl-11 pr-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-slate-200 placeholder-slate-500">
+                            class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm focus:outline-none text-slate-200 placeholder-slate-500">
                     </div>
                     <div class="flex flex-wrap items-center gap-3">
-                        <select id="diff-filter" onchange="renderPractice()" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 text-slate-300">
+                        <select id="diff-filter" onchange="renderPractice()" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-300">
                             <option value="ALL">Todas las Dificultades</option>
                             <option value="Fácil">🟢 Fácil (25)</option>
                             <option value="Intermedio">🟡 Intermedio (25)</option>
@@ -82,7 +79,7 @@
                             <option value="Experto/Senior">🔴 Experto/Senior (25)</option>
                         </select>
 
-                        <select id="cat-filter" onchange="renderPractice()" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 text-slate-300">
+                        <select id="cat-filter" onchange="renderPractice()" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-300">
                             <option value="ALL">Todas las Categorías</option>
                             <option value="JavaScript">JavaScript</option>
                             <option value="HTML">HTML</option>
@@ -97,19 +94,19 @@
 
                 <!-- Dificultad Stats Bar -->
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                    <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-700/50 flex items-center justify-between">
+                    <div class="bg-slate-900 p-3 rounded-xl border border-slate-700 flex items-center justify-between">
                         <span class="text-xs font-semibold text-emerald-400">🟢 FÁCIL</span>
                         <span class="text-xs font-bold text-slate-300" id="stat-easy">25 preguntas</span>
                     </div>
-                    <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-700/50 flex items-center justify-between">
+                    <div class="bg-slate-900 p-3 rounded-xl border border-slate-700 flex items-center justify-between">
                         <span class="text-xs font-semibold text-amber-400">🟡 INTERMEDIO</span>
                         <span class="text-xs font-bold text-slate-300" id="stat-mid">25 preguntas</span>
                     </div>
-                    <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-700/50 flex items-center justify-between">
+                    <div class="bg-slate-900 p-3 rounded-xl border border-slate-700 flex items-center justify-between">
                         <span class="text-xs font-semibold text-orange-400">🟠 AVANZADO</span>
                         <span class="text-xs font-bold text-slate-300" id="stat-adv">25 preguntas</span>
                     </div>
-                    <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-700/50 flex items-center justify-between">
+                    <div class="bg-slate-900 p-3 rounded-xl border border-slate-700 flex items-center justify-between">
                         <span class="text-xs font-semibold text-rose-400">🔴 EXPERTO</span>
                         <span class="text-xs font-bold text-slate-300" id="stat-exp">25 preguntas</span>
                     </div>
@@ -124,7 +121,7 @@
         <section id="exam-view" class="hidden space-y-6">
             <!-- Start Config Screen -->
             <div id="exam-start-screen" class="bg-slate-800 rounded-2xl p-8 border border-slate-700 max-w-2xl mx-auto text-center space-y-6 shadow-2xl">
-                <div class="inline-flex p-4 bg-cyan-500/10 text-cyan-400 rounded-full text-4xl mb-2">
+                <div class="inline-flex p-4 bg-slate-900 text-cyan-400 rounded-full text-4xl mb-2">
                     <i class="fa-solid fa-stopwatch"></i>
                 </div>
                 <h2 class="text-2xl font-bold text-white">Simulador de Examen Técnico</h2>
@@ -133,12 +130,12 @@
                 </p>
 
                 <div class="grid grid-cols-2 gap-4 max-w-xs mx-auto">
-                    <button onclick="startExam(10)" class="p-4 bg-slate-900 border border-cyan-500/40 rounded-xl hover:border-cyan-500 transition text-center group">
-                        <span class="block text-2xl font-bold text-cyan-400 group-hover:scale-110 transition">10</span>
+                    <button onclick="startExam(10)" class="p-4 bg-slate-900 border border-slate-700 rounded-xl hover:border-cyan-500 transition text-center">
+                        <span class="block text-2xl font-bold text-cyan-400">10</span>
                         <span class="text-xs text-slate-400">Preguntas</span>
                     </button>
-                    <button onclick="startExam(20)" class="p-4 bg-slate-900 border border-cyan-500/40 rounded-xl hover:border-cyan-500 transition text-center group">
-                        <span class="block text-2xl font-bold text-cyan-400 group-hover:scale-110 transition">20</span>
+                    <button onclick="startExam(20)" class="p-4 bg-slate-900 border border-slate-700 rounded-xl hover:border-cyan-500 transition text-center">
+                        <span class="block text-2xl font-bold text-cyan-400">20</span>
                         <span class="text-xs text-slate-400">Preguntas</span>
                     </button>
                 </div>
@@ -158,7 +155,7 @@
 
                 <!-- Progress Bar -->
                 <div class="w-full bg-slate-800 rounded-full h-2 border border-slate-700 overflow-hidden">
-                    <div id="exam-progress-bar" class="bg-gradient-to-r from-cyan-500 to-blue-500 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    <div id="exam-progress-bar" class="bg-cyan-600 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
                 </div>
 
                 <!-- Question Card -->
@@ -173,10 +170,10 @@
                 <p id="result-feedback" class="text-slate-300 text-sm"></p>
 
                 <div class="pt-4 flex justify-center space-x-4">
-                    <button onclick="resetExam()" class="px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-xl transition shadow-lg shadow-cyan-600/20">
+                    <button onclick="resetExam()" class="px-6 py-3 bg-cyan-600 text-white font-medium rounded-xl transition">
                         Intentar de Nuevo
                     </button>
-                    <button onclick="switchTab('practice')" class="px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white font-medium rounded-xl transition">
+                    <button onclick="switchTab('practice')" class="px-6 py-3 bg-slate-700 text-white font-medium rounded-xl transition">
                         Revisar en Modo Práctica
                     </button>
                 </div>
@@ -185,10 +182,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800 bg-slate-900/50 py-6 mt-12">
+    <footer class="border-t border-slate-800 bg-slate-900 py-6 mt-12">
         <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 space-y-2">
             <p>DevMaster 100 &copy; 2026 - Guía Completa de Desarrollo de Software, POO, Web & SPICE ISO/IEC 15504</p>
-            <p>Diseñado para despliegue directo en GitHub Pages y desarrollo local en VS Code.</p>
         </div>
     </footer>
 
